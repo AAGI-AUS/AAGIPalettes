@@ -34,7 +34,7 @@
 #'  * "aagi_yellows" (7 stops)
 #' 
 #' ### Paired palette
-#'  * "aagi_paired" (2, 4 or 6 colours, **i.e.** 1, 2 or 3 pairs)
+#'  * "aagi_paired" (1, 2 or 3 pairs, **i.e.** 2, 4 or 6 colours)
 #'
 #' # Methods
 #' The colours were taken from the \acronym{AAGI} communications style guide
@@ -149,7 +149,7 @@ aagi_palette <- function(n,
     cli::cli_abort(
       c(
         x = "You have requested {n} values for your palette. However, {.arg n}
-          should be one of 2, 4 or 6."
+          should be one of 2, 4 or 6 (pairs)."
       )
     )
   }
@@ -164,7 +164,7 @@ aagi_palette <- function(n,
   }
 
   p <- switch(name,
-    aagi_paired = switch(n - 2,
+    aagi_paired = switch(n / 2,
       # 2
       c("#B6D438", "#54921E"),
       # 4

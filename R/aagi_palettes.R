@@ -1,4 +1,4 @@
-#' Sequential, Diverging and Paired Colour Palettes for AAGI Graphical Outputs
+#' Sequential and Diverging Colour Palettes for AAGI Graphical Outputs
 #'
 #' \acronym{AAGI} palettes for use in charts and plots based on official
 #'   \acronym{AAGI} colours and interpolated to provide more colours for use in
@@ -32,9 +32,6 @@
 #'  * "aagi_reds" (9 stops),
 #'  * "aagi_teals" (9 stops), and
 #'  * "aagi_yellows" (7 stops)
-#' 
-#' ### Paired palette
-#'  * "aagi_paired" (1, 2 or 3 pairs, **i.e.** 2, 4 or 6 colours)
 #'
 #' # Methods
 #' The colours were taken from the \acronym{AAGI} communications style guide
@@ -57,19 +54,12 @@
 #' @details
 #' When `name` is any other palette, the minimum value for `n` is 3 and
 #'   maximum will vary from 7 to 9 or 11 stops based on the palette requested.
-#' 
-#' When `name` is `aagi_paired`, `n` must be 2, 4 or 6 and will have one each of
-#'   light(er) and one dark(er) related colours.
-#'
 #' @examples
 #' # sequential blues with 7 stops
 #' aagi_palettes(n = 7, name = "aagi_blues", direction = 1)
 #'
 #' # diverging red teal colours with 11 stops
 #' aagi_palettes(n = 11, name = "aagi_RdTl", direction = 1)
-#' 
-#' # paired palette with 4 colours (2 sets)
-#' aagi_palettes(n = 4, name = "aagi_paired")
 #'
 #' @return A vector of hexadecimal colour codes
 #' @export
@@ -93,8 +83,7 @@ aagi_palettes <- function(n,
                            "aagi_reds",
                            "aagi_teals",
                            "aagi_oranges",
-                           "aagi_yellows",
-                           "aagi_paired"
+                           "aagi_yellows"
                          ),
                          direction = 1L) {
   
@@ -102,7 +91,6 @@ aagi_palettes <- function(n,
 
   n <- as.integer(n)
 
-  if (name %in% c("aagi_paired")) {
     if (n < 3) {
       cli::cli_warn(
         c(
@@ -146,14 +134,6 @@ aagi_palettes <- function(n,
       )
       n <- 11
     }
-  } else if (name == "aagi_paired" && !n %in% c(2, 4, 6)) {
-    cli::cli_abort(
-      c(
-        x = "You have requested {n} values for your palette. However, {.arg n}
-          should be one of 2, 4 or 6 (pairs)."
-      )
-    )
-  }
 
   if (direction != -1 && direction != 1) {
     cli::cli_abort(
@@ -165,21 +145,6 @@ aagi_palettes <- function(n,
   }
 
   p <- switch(name,
-    aagi_paired = switch(n / 2,
-      # 2
-      c("#B6D438", "#54921E"),
-      # 4
-      c("#B6D438", "#54921E", "#648FD2", "#00808b"),
-      # 6
-      c(
-        "#B6D438",
-        "#54921E",
-        "#648FD2",
-        "#00808b",
-        "#FFBC42",
-        "#EC8525"
-      )
-    ),
     aagi_BrYl = switch(n - 2,
       # 3
       c("#380100", "#965a24", "#ffbc42"),

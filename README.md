@@ -69,14 +69,6 @@ display_aagi_cols(name = "aagi_BuOr", n = 9)
 
 <img src="man/figures/README-plot_BuOR-1.png" width="100%" />
 
-Display the “aagi_paired” palette with 6 colours, 3 pairs.
-
-``` r
-display_aagi_cols(name = "aagi_paired", n = 6)
-```
-
-<img src="man/figures/README-plot_paired-1.png" width="100%" />
-
 ### Interpolating Colours
 
 ``` r

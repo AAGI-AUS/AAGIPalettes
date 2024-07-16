@@ -2,14 +2,14 @@
 % Please edit documentation in R/aagi_palettes.R
 \name{aagi_palettes}
 \alias{aagi_palettes}
-\title{Sequential, Diverging and Paired Colour Palettes for AAGI Graphical Outputs}
+\title{Sequential and Diverging Colour Palettes for AAGI Graphical Outputs}
 \usage{
 aagi_palettes(
   n,
   name = c("aagi_BrYl", "aagi_BuOr", "aagi_BuYl", "aagi_GnYl", "aagi_RdBu", "aagi_RdTl",
     "aagi_RdYl", "aagi_TlGn", "aagi_TlYl", "aagi_TlGnYl", "aagi_blues",
     "aagi_bright_greens", "aagi_greens", "aagi_greys", "aagi_reds", "aagi_teals",
-    "aagi_oranges", "aagi_yellows", "aagi_paired"),
+    "aagi_oranges", "aagi_yellows"),
   direction = 1L
 )
 }
@@ -65,12 +65,6 @@ be official \acronym{AAGI} colours.
 }
 }
 
-\subsection{Paired palette}{
-\itemize{
-\item "aagi_paired" (1, 2 or 3 pairs, \strong{i.e.} 2, 4 or 6 colours)
-}
-}
-
 }
 }
 \section{Methods}{
@@ -87,9 +81,6 @@ palettes are colourblind safe.
 
 When \code{name} is any other palette, the minimum value for \code{n} is 3 and
 maximum will vary from 7 to 9 or 11 stops based on the palette requested.
-
-When \code{name} is \code{aagi_paired}, \code{n} must be 2, 4 or 6 and will have one each of
-light(er) and one dark(er) related colours.
 }
 
 \examples{
@@ -98,8 +89,5 @@ aagi_palettes(n = 7, name = "aagi_blues", direction = 1)
 
 # diverging red teal colours with 11 stops
 aagi_palettes(n = 11, name = "aagi_RdTl", direction = 1)
-
-# paired palette with 4 colours (2 sets)
-aagi_palettes(n = 4, name = "aagi_paired")
 
 }

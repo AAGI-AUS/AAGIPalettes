@@ -2,25 +2,27 @@ Package: AAGIPalettes
 Title: AAGI Colour Palettes
 Version: 0.0.0.9000
 Authors@R: 
-    person("Adam", "Sparks", , "adam.sparks@curtin.edu.au", role = c("aut", "cre"))
+    person("Adam H.", "Sparks", , "adamhsparks@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0061-8359"))
 Description: Colour palettes based on the official Analytics for the
-    AustralianGrains Industry ('AAGI') comms guide and others designed
-    to work harmoniously with the official 'AAGI' colours while being
-    colour vision deficient (CVD) friendly.
+    AustralianGrains Industry ('AAGI') comms guide and others designed to
+    work harmoniously with the official 'AAGI' colours while being colour
+    vision deficient (CVD) friendly.
 License: MIT + file LICENSE
-URL: https://github.com/AAGI-Org-AU-Public/AAGIPalettes, https://aagi-org-au-public.github.io/AAGIPalettes/
+URL: https://github.com/AAGI-Org-AU-Public/AAGIPalettes,
+    https://aagi-org-au-public.github.io/AAGIPalettes/
 BugReports: https://github.com/AAGI-Org-AU-Public/AAGIPalettes/issues
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+Depends: 
+    R (>= 2.10)
 Imports: 
     cli,
     rlang,
     scales
-Depends: 
-    R (>= 2.10)
-LazyData: true
 Suggests: 
     ggplot2,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2

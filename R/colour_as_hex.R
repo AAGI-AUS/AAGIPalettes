@@ -23,7 +23,7 @@ colour_as_hex <- function(name = c(
                             "AAGI Orange"
                           )) {
 
-  rlang::arg_match(name, multiple = TRUE)
+  name <- rlang::arg_match(name, multiple = TRUE)
 
-  return(unname(aagi_colours[name]))
+  return(unname(AAGIPalettes::aagi_colours[name]))
 }

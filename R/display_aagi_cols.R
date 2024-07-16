@@ -71,7 +71,7 @@ display_aagi_cols <- function(name, n = NULL) {
     if (is.null(n)) {
       n <- 5
     }
-    return(scales::show_col(aagi_palette(
+    return(scales::show_col(aagi_palettes(
       n = n,
       name = name,
       direction = 1

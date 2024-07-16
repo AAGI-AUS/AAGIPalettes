@@ -1,5 +1,5 @@
 #' Official AAGI Colours From the AAGI Comms Guide
-#' 
+#'
 #' A Vector of the official AAGI Colour Hex Codes.  Other colour palettes are
 #'   provided via [aagi_palettes()] for plotting purposes but may not considered
 #'   to be "official" \acronym{AAGI} colours.
@@ -15,7 +15,6 @@
 #'      \item{AAGI Black}{#414042}
 #'      \item{AAGI Grey}{#F2F2F2}
 #'      }
-#' 
 #' @keywords datasets
 #'
 #' @family data

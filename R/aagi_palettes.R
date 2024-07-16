@@ -8,9 +8,7 @@
 #'   They are are palettes that are intended to be useful for creating plots
 #'   that incorporate come official  \acronym{AAGI} colours but they may not all
 #'   be official \acronym{AAGI} colours.
-#' 
 #' ## List of available palettes
-#' 
 #' ### Diverging palettes
 #'  * "aagi_BrYl" (11 stops),
 #'  * "aagi_BuOr" (11 stops),
@@ -22,7 +20,6 @@
 #'  * "aagi_TlGn" (11 stops),
 #'  * "aagi_TlYl" (11 stops), and
 #'  * "aagi_TlGnYl"  (11 stops)
-#' 
 #' ### Sequential palettes
 #'  * "aagi_blues" (7 stops),
 #'  * "aagi_bright_greens" (7 stops),
@@ -65,75 +62,74 @@
 #' @export
 
 aagi_palettes <- function(n,
-                         name = c(
-                           "aagi_BrYl",
-                           "aagi_BuOr",
-                           "aagi_BuYl",
-                           "aagi_GnYl",
-                           "aagi_RdBu",
-                           "aagi_RdTl",
-                           "aagi_RdYl",
-                           "aagi_TlGn",
-                           "aagi_TlYl",
-                           "aagi_TlGnYl",
-                           "aagi_blues",
-                           "aagi_bright_greens",
-                           "aagi_greens",
-                           "aagi_greys",
-                           "aagi_reds",
-                           "aagi_teals",
-                           "aagi_oranges",
-                           "aagi_yellows"
-                         ),
-                         direction = 1L) {
-  
+                          name = c(
+                            "aagi_BrYl",
+                            "aagi_BuOr",
+                            "aagi_BuYl",
+                            "aagi_GnYl",
+                            "aagi_RdBu",
+                            "aagi_RdTl",
+                            "aagi_RdYl",
+                            "aagi_TlGn",
+                            "aagi_TlYl",
+                            "aagi_TlGnYl",
+                            "aagi_blues",
+                            "aagi_bright_greens",
+                            "aagi_greens",
+                            "aagi_greys",
+                            "aagi_reds",
+                            "aagi_teals",
+                            "aagi_oranges",
+                            "aagi_yellows"
+                          ),
+                          direction = 1L) {
   name <- rlang::arg_match(name)
 
   n <- as.integer(n)
 
-    if (n < 3) {
-      cli::cli_warn(
-        c(
-          x = "You have requested <3 values for your palette. However, {.arg n}
+  if (n < 3) {
+    cli::cli_warn(
+      c(
+        x = "You have requested <3 values for your palette. However, {.arg n}
         should be >3. Returning a palette with 3 values."
-        )
       )
-      n <- 3
-    } else if (n > 7 && name %in% c(
-      "aagi_blues",
-      "aagi_bright_greens",
-      "aagi_greens",
-      "aagi_yellows"
-    )) {
-      cli::cli_warn(
-        c(
-          i = "You have requested >7 values for a palette that only has 7 total.
+    )
+    n <- 3
+  } else if (n > 7 && name %in% c(
+    "aagi_blues",
+    "aagi_bright_greens",
+    "aagi_greens",
+    "aagi_yellows"
+  )) {
+    cli::cli_warn(
+      c(
+        i = "You have requested >7 values for a palette that only has 7 total.
         Returning a palette with 7 values."
-        )
       )
-      n <- 7
-    } else if (n > 9 && name %in% c(
-      "aagi_oranges",
-      "aagi_reds",
-      "aagi_teals",
-      "aagi_greens"
-    )) {
-      cli::cli_warn(
-        c(
-          i = "You have requested >9 values for a palette that only has 9 total.
+    )
+    n <- 7
+  } else if (n > 9 && name %in% c(
+    "aagi_oranges",
+    "aagi_reds",
+    "aagi_teals",
+    "aagi_greens"
+  )) {
+    cli::cli_warn(
+      c(
+        i = "You have requested >9 values for a palette that only has 9 total.
         Returning a palette with 9 values."
-        )
       )
-      n <- 9
-    } else if (n > 11) {
-      cli::cli_warn(
-        c(
-          x = "You have requested >11 values for your palette. However, {.arg n}
+    )
+    n <- 9
+  } else if (n > 11) {
+    cli::cli_warn(
+      c(
+        x = "You have requested >11 values for your palette. However, {.arg n}
         should be <11. Returning a palette with 11 values."
-        )
       )
-      n <- 11
-    }
+    )
+    n <- 11
+  }
 
   if (direction != -1 && direction != 1) {
     cli::cli_abort(
@@ -1197,7 +1193,7 @@ aagi_palettes <- function(n,
     )
   )
 
- ifelse(direction == 1, return(p), return(rev(p)))
+  ifelse(direction == 1, return(p), return(rev(p)))
 
   return(p)
 }

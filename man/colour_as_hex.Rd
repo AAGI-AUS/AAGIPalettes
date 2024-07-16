@@ -5,8 +5,8 @@
 \title{Extract AAGI Colours as Hex Codes From Names}
 \usage{
 colour_as_hex(
-  name = c("AAGI Black", "AAGI Bright Green", "AAGI Teal", "AAGI Green", "AAGI Yellow",
-    "AAGI Orange")
+  name = c("AAGI Black", "AAGI Bright Green", "AAGI Blue", "AAGI Teal", "AAGI Green",
+    "AAGI Yellow", "AAGI Orange")
 )
 }
 \arguments{

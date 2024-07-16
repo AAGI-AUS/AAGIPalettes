@@ -63,18 +63,18 @@
 #'
 #' @examples
 #' # sequential blues with 7 stops
-#' aagi_palette(n = 7, name = "aagi_blues", direction = 1)
+#' aagi_palettes(n = 7, name = "aagi_blues", direction = 1)
 #'
 #' # diverging red teal colours with 11 stops
-#' aagi_palette(n = 11, name = "aagi_RdTl", direction = 1)
+#' aagi_palettes(n = 11, name = "aagi_RdTl", direction = 1)
 #' 
 #' # paired palette with 4 colours (2 sets)
-#' aagi_palette(n = 4, name = "aagi_paired")
+#' aagi_palettes(n = 4, name = "aagi_paired")
 #'
 #' @return A vector of hexadecimal colour codes
 #' @export
 
-aagi_palette <- function(n,
+aagi_palettes <- function(n,
                          name = c(
                            "aagi_BrYl",
                            "aagi_BuOr",
@@ -97,11 +97,12 @@ aagi_palette <- function(n,
                            "aagi_paired"
                          ),
                          direction = 1L) {
-  rlang::arg_match(name)
+  
+  name <- rlang::arg_match(name)
 
   n <- as.integer(n)
 
-  if (name != "aagi_paired") {
+  if (name %in% c("aagi_paired")) {
     if (n < 3) {
       cli::cli_warn(
         c(

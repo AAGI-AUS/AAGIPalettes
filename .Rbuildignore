@@ -4,3 +4,5 @@
 ^docs$
 ^pkgdown$
 ^codemeta\.json$
+^README\.Rmd$
+

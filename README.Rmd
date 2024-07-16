@@ -65,3 +65,9 @@ Display the "aagi_BuOr" palette with 9 stops.
 ```{r plot_BuOR}
 display_aagi_cols(name = "aagi_BuOr", n = 9)
 ```
+
+Display the "aagi_paired" palette with 6 colours, 3 pairs.
+
+```{r plot_paired}
+display_aagi_cols(name = "aagi_paired", n = 6)
+```

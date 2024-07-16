@@ -76,3 +76,19 @@ display_aagi_cols(name = "aagi_paired", n = 6)
 ```
 
 <img src="man/figures/README-plot_paired-1.png" width="100%" />
+
+### Interpolating Colours
+
+``` r
+library(ggplot2)
+
+x <- interpolate_aagi_colours()
+# round the weights to clean up the legend, this is just an e.g. after all...
+wt_vals <- x(length(unique(round(mtcars$wt, 1))))
+
+ggplot(mtcars, aes(x = mpg, y = hp, colour = as.factor(round(wt, 1)))) +
+geom_point() +
+scale_colour_manual("Weight", values = wt_vals)
+```
+
+<img src="man/figures/README-interpolate_colours-1.png" width="100%" />

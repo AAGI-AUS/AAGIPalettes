@@ -16,6 +16,7 @@
 colour_as_hex <- function(name = c(
                             "AAGI Black",
                             "AAGI Bright Green",
+                            "AAGI Blue",
                             "AAGI Teal",
                             "AAGI Green",
                             "AAGI Yellow",

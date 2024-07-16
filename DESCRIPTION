@@ -8,7 +8,7 @@ Description: Colour palettes based on the official Analytics for the
     to work harmoniously with the official 'AAGI' colours while being
     colour vision deficient (CVD) friendly.
 License: MIT + file LICENSE
-URL: https://github.com/AAGI-Org-AU-Public/AAGIPalettes
+URL: https://github.com/AAGI-Org-AU-Public/AAGIPalettes, https://aagi-org-au-public.github.io/AAGIPalettes/
 BugReports: https://github.com/AAGI-Org-AU-Public/AAGIPalettes/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

@@ -67,7 +67,7 @@ be official \acronym{AAGI} colours.
 
 \subsection{Paired palette}{
 \itemize{
-\item "aagi_paired" (2, 4 or 6 colours, \strong{i.e.} 1, 2 or 3 pairs)
+\item "aagi_paired" (1, 2 or 3 pairs, \strong{i.e.} 2, 4 or 6 colours)
 }
 }
 

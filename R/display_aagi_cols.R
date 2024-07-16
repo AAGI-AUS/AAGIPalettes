@@ -7,13 +7,11 @@
 #'   maximum depends on the palette. Defaults to `5`.  Ignored if name is
 #'   `aagi_colours`.
 #'
-#' There are 3 types of palettes provided, qualitative, sequential and
-#'   diverging.
-#'  1. qualitative palettes are suited to ...
-#'  2. Sequential palettes are suited to ordered data that progress from low
+#' There are two (2) types of palettes provided, sequential and diverging.
+#'  1. Sequential palettes are suited to ordered data that progress from low
 #'   to high.  Lightness steps dominate the look of these schemes, with light
 #'   colours for low data values to dark colours for high data values.
-#'  3. Diverging palettes put equal emphasis on mid-range critical values and
+#'  2. Diverging palettes put equal emphasis on mid-range critical values and
 #'   extremes at both ends of the data range.  The critical class or break in
 #'   the middle of the legend is emphasized with light colours and low and high
 #'   extremes are emphasized with dark colours that have contrasting hues.

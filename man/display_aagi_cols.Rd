@@ -13,10 +13,8 @@ display_aagi_cols(name, n = NULL)
 maximum depends on the palette. Defaults to \code{5}.  Ignored if name is
 \code{aagi_colours}.
 
-There are 3 types of palettes provided, qualitative, sequential and
-diverging.
+There are two (2) types of palettes provided, sequential and diverging.
 \enumerate{
-\item qualitative palettes are suited to ...
 \item Sequential palettes are suited to ordered data that progress from low
 to high.  Lightness steps dominate the look of these schemes, with light
 colours for low data values to dark colours for high data values.

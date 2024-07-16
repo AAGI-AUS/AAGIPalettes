@@ -16,14 +16,14 @@ maximum depends on the palette. Defaults to \code{5}.  Ignored if name is
 There are 3 types of palettes provided, qualitative, sequential and
 diverging.
 \enumerate{
-\item{qualitative palettes are suited to ...}
-\item{Sequential palettes are suited to ordered data that progress from low
+\item qualitative palettes are suited to ...
+\item Sequential palettes are suited to ordered data that progress from low
 to high.  Lightness steps dominate the look of these schemes, with light
-colours for low data values to dark colours for high data values.}
-\item{Diverging palettes put equal emphasis on mid-range critical values and
+colours for low data values to dark colours for high data values.
+\item Diverging palettes put equal emphasis on mid-range critical values and
 extremes at both ends of the data range.  The critical class or break in
 the middle of the legend is emphasized with light colours and low and high
-extremes are emphasized with dark colours that have contrasting hues.}
+extremes are emphasized with dark colours that have contrasting hues.
 }
 
 The sequential palettes names are:
@@ -71,7 +71,7 @@ A quick and dirty way to show \acronym{AAGI} colours in a palette plot.
 \examples{
 
 # display the official AAGI colours
-display_aagi_cols(aagi_colours)
+display_aagi_cols(name = "aagi_colours")
 
 # display five colours from the Blue Orange diverging palette
 display_aagi_cols(name = "aagi_BuOr")

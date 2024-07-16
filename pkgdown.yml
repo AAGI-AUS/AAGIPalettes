@@ -1,0 +1,8 @@
+pandoc: 3.1.11
+pkgdown: 2.1.0
+pkgdown_sha: ~
+articles: {}
+last_built: 2024-07-16T09:19Z
+urls:
+  reference: https://aagi-org-au-public.github.io/AAGIPalettes/reference
+  article: https://aagi-org-au-public.github.io/AAGIPalettes/articles

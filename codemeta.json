@@ -4,6 +4,7 @@
   "identifier": "AAGIPalettes",
   "description": "Colour palettes based on the official Analytics for the AustralianGrains Industry ('AAGI') comms guide and others designed to work harmoniously with the official 'AAGI' colours while being colour vision deficient (CVD) friendly.",
   "name": "AAGIPalettes: AAGI Colour Palettes",
+  "relatedLink": "https://aagi-org-au-public.github.io/AAGIPalettes/",
   "codeRepository": "https://github.com/AAGI-Org-AU-Public/AAGIPalettes",
   "issueTracker": "https://github.com/AAGI-Org-AU-Public/AAGIPalettes/issues",
   "license": "https://spdx.org/licenses/MIT",
@@ -17,17 +18,19 @@
   "author": [
     {
       "@type": "Person",
-      "givenName": "Adam",
+      "givenName": "Adam H.",
       "familyName": "Sparks",
-      "email": "adam.sparks@curtin.edu.au"
+      "email": "adamhsparks@gmail.com",
+      "@id": "https://orcid.org/0000-0002-0061-8359"
     }
   ],
   "maintainer": [
     {
       "@type": "Person",
-      "givenName": "Adam",
+      "givenName": "Adam H.",
       "familyName": "Sparks",
-      "email": "adam.sparks@curtin.edu.au"
+      "email": "adamhsparks@gmail.com",
+      "@id": "https://orcid.org/0000-0002-0061-8359"
     }
   ],
   "softwareSuggestions": [
@@ -60,6 +63,12 @@
   "softwareRequirements": {
     "1": {
       "@type": "SoftwareApplication",
+      "identifier": "R",
+      "name": "R",
+      "version": ">= 2.10"
+    },
+    "2": {
+      "@type": "SoftwareApplication",
       "identifier": "cli",
       "name": "cli",
       "provider": {
@@ -70,7 +79,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=cli"
     },
-    "2": {
+    "3": {
       "@type": "SoftwareApplication",
       "identifier": "rlang",
       "name": "rlang",
@@ -82,7 +91,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=rlang"
     },
-    "3": {
+    "4": {
       "@type": "SoftwareApplication",
       "identifier": "scales",
       "name": "scales",
@@ -94,15 +103,9 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=scales"
     },
-    "4": {
-      "@type": "SoftwareApplication",
-      "identifier": "R",
-      "name": "R",
-      "version": ">= 2.10"
-    },
     "SystemRequirements": null
   },
-  "fileSize": "206.582KB",
+  "fileSize": "184.944KB",
   "readme": "https://github.com/AAGI-Org-AU-Public/AAGIPalettes/blob/main/README.md",
   "contIntegration": "https://github.com/AAGI-Org-AU-Public/AAGIPalettes/actions/workflows/R-CMD-check.yaml",
   "developmentStatus": "https://www.repostatus.org/#active"

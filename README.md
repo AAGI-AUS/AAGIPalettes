@@ -43,10 +43,10 @@ so.
 library("AAGIPalettes")
 
 aagi_colours
-#>        AAGI Black AAGI Bright Green         AAGI Teal         AAGI Blue 
-#>         "#414042"         "#B6D438"         "#00808b"         "#648FD2" 
-#>        AAGI Green       AAGI Yellow       AAGI Orange 
-#>         "#54921E"         "#FFBC42"         "#ec8525"
+#> AAGI Bright Green         AAGI Teal         AAGI Blue        AAGI Green 
+#>         "#B6D438"         "#00808b"         "#648FD2"         "#54921E" 
+#>       AAGI Yellow       AAGI Orange        AAGI Black         AAGI Grey 
+#>         "#FFBC42"         "#ec8525"         "#414042"         "#F2F2F2"
 ```
 
 ### Viewing Colours

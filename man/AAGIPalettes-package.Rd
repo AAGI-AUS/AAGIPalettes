@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Colour palettes based on the official Analytics for the AustralianGrains Industry ('AAGI') comms guide and others designed to work harmoniously with the official 'AAGI' colours while being colour vision deficient (CVD) friendly.
+Colour palettes based on the official Analytics for the Australian Grains Industry ('AAGI') comms guide and others designed to work harmoniously with the official 'AAGI' colours while being colour vision deficient (CVD) friendly.
 }
 \seealso{
 Useful links:

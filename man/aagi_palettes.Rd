@@ -34,8 +34,6 @@ colour-blind friendly, while still being based on and include official
 They are are palettes that are intended to be useful for creating plots
 that incorporate come official  \acronym{AAGI} colours but they may not all
 be official \acronym{AAGI} colours.
-}
-\details{
 \subsection{List of available palettes}{
 \subsection{Diverging palettes}{
 \itemize{

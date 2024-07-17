@@ -9,7 +9,7 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 [![R-CMD-check](https://github.com/AAGI-Org-AU-Public/AAGIPalettes/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/AAGI-Org-AU-Public/AAGIPalettes/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-# {AAGIPalettes} AAGI Colours for R <img align="right" src="man/figures/logo.png">
+# {AAGIPalettes} AAGI Colours and Colour Palettes for R <img align="right" src="man/figures/logo.png">
 
 This repository contains the code for the R package {AAGIPalettes},
 which once installed in your R session (local or RStudio Server),

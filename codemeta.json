@@ -3,7 +3,7 @@
   "@type": "SoftwareSourceCode",
   "identifier": "AAGIPalettes",
   "description": "Colour palettes based on the official Analytics for the Australian Grains Industry ('AAGI') comms guide and others designed to work harmoniously with the official 'AAGI' colours while being colour vision deficient (CVD) friendly.",
-  "name": "AAGIPalettes: AAGI Colour Palettes",
+  "name": "AAGIPalettes: AAGI Colours and Colour Palettes",
   "relatedLink": "https://aagi-org-au-public.github.io/AAGIPalettes/",
   "codeRepository": "https://github.com/AAGI-Org-AU-Public/AAGIPalettes",
   "issueTracker": "https://github.com/AAGI-Org-AU-Public/AAGIPalettes/issues",
@@ -105,7 +105,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "184.802KB",
+  "fileSize": "184.846KB",
   "readme": "https://github.com/AAGI-Org-AU-Public/AAGIPalettes/blob/main/README.md",
   "contIntegration": "https://github.com/AAGI-Org-AU-Public/AAGIPalettes/actions/workflows/R-CMD-check.yaml",
   "developmentStatus": "https://www.repostatus.org/#active"

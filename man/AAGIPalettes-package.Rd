@@ -4,7 +4,7 @@
 \name{AAGIPalettes-package}
 \alias{AAGIPalettes}
 \alias{AAGIPalettes-package}
-\title{AAGIPalettes: AAGI Colour Palettes}
+\title{AAGIPalettes: AAGI Colours and Colour Palettes}
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 

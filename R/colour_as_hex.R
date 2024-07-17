@@ -20,7 +20,8 @@ colour_as_hex <- function(name = c(
                             "AAGI Teal",
                             "AAGI Green",
                             "AAGI Yellow",
-                            "AAGI Orange"
+                            "AAGI Orange",
+                            "AAGI Grey"
                           )) {
 
   name <- rlang::arg_match(name, multiple = TRUE)

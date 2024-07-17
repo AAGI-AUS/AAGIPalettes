@@ -199,7 +199,7 @@
      id="metadata207"><rdf:RDF><cc:Work><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><cc:license
            rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" /><dc:publisher><cc:Agent
-             rdf:about="http://openclipart.org/"><dc:title /></cc:Agent></dc:publisher><dc:description>R theme.aagi package hex sticker SVG file source</dc:description><dc:creator><cc:Agent><dc:title>adamhsparks</dc:title></cc:Agent></dc:creator><dc:subject><rdf:Bag><rdf:li>R</rdf:li><rdf:li>hexsticker</rdf:li></rdf:Bag></dc:subject><dc:rights><cc:Agent><dc:title>CC0</dc:title></cc:Agent></dc:rights><dc:title>AAGIPalettes</dc:title></cc:Work><cc:License
+             rdf:about="http://openclipart.org/"><dc:title /></cc:Agent></dc:publisher><dc:description>R AAGIThemes package hex sticker SVG file source</dc:description><dc:creator><cc:Agent><dc:title>adamhsparks</dc:title></cc:Agent></dc:creator><dc:subject><rdf:Bag><rdf:li>R</rdf:li><rdf:li>hexsticker</rdf:li></rdf:Bag></dc:subject><dc:rights><cc:Agent><dc:title>CC0</dc:title></cc:Agent></dc:rights><dc:title>AAGIPalettes</dc:title></cc:Work><cc:License
          rdf:about="http://creativecommons.org/publicdomain/zero/1.0/"><cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" /><cc:permits
            rdf:resource="http://creativecommons.org/ns#Distribution" /><cc:permits

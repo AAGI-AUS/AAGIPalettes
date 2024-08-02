@@ -13,9 +13,9 @@ Colour palettes based on the official Analytics for the Australian Grains Indust
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/AAGI-Org-AU-Public/AAGIPalettes}
-  \item \url{https://aagi-org-au-public.github.io/AAGIPalettes/}
-  \item Report bugs at \url{https://github.com/AAGI-Org-AU-Public/AAGIPalettes/issues}
+  \item \url{https://github.com/AAGI-AUS/AAGIPalettes}
+  \item \url{https://AAGI-AUS.github.io/AAGIPalettes/}
+  \item Report bugs at \url{https://github.com/AAGI-AUS/AAGIPalettes/issues}
 }
 
 }

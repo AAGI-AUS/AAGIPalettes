@@ -9,9 +9,9 @@ Description: Colour palettes based on the official Analytics for the
     work harmoniously with the official 'AAGI' colours while being colour
     vision deficient (CVD) friendly.
 License: MIT + file LICENSE
-URL: https://github.com/AAGI-Org-AU-Public/AAGIPalettes,
-    https://aagi-org-au-public.github.io/AAGIPalettes/
-BugReports: https://github.com/AAGI-Org-AU-Public/AAGIPalettes/issues
+URL: https://github.com/AAGI-AUS/AAGIPalettes,
+    https://AAGI-AUS.github.io/AAGIPalettes/
+BugReports: https://github.com/AAGI-AUS/AAGIPalettes/issues
 Depends: 
     R (>= 2.10)
 Imports: 

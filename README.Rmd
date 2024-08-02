@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![R-CMD-check](https://github.com/AAGI-Org-AU-Public/AAGIPalettes/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/AAGI-Org-AU-Public/AAGIPalettes/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/AAGI-AUS/AAGIPalettes/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/AAGI-AUS/AAGIPalettes/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 # {AAGIPalettes} AAGI Colours and Colour Palettes for R <img align="right" src="man/figures/logo.png">
@@ -31,7 +31,7 @@ You can install {AAGIPalettes} like so:
 if (!requireNamespace("remotes", quietly = TRUE)) {
   install.packages("remotes")
 }
-remotes::install_github("AAGI-Org-AU-Public/AAGIPalettes",
+remotes::install_github("AAGI-AUS/AAGIPalettes",
                         dependencies = TRUE
 )
 ```

@@ -7,8 +7,6 @@
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![R-CMD-check](https://github.com/AAGI-AUS/AAGIPalettes/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/AAGI-AUS/AAGIPalettes/actions/workflows/R-CMD-check.yaml)
-[![Codecov test
-coverage](https://codecov.io/gh/AAGI-Org-AU-Public/AAGIPalettes/graph/badge.svg)](https://app.codecov.io/gh/AAGI-Org-AU-Public/AAGIPalettes)
 <!-- badges: end -->
 
 # {AAGIPalettes} AAGI Colours and Colour Palettes for R <img align="right" src="man/figures/logo.png">

@@ -84,3 +84,12 @@ scale_colour_manual("Weight", values = wt_vals)
 ```
 
 <img src="man/figures/README-interpolate_colours-1.png" width="100%" />
+
+## Logo Rights
+
+The logo of this project and the AAGI strategic partners do not come
+under MIT License. The Analytics for the Australian Grains Industry
+(AAGI) project retains full rights to the AGGI logo and the Grains
+Research and Development Corporation (GRDC) and strategic partners,
+Curtin University, the University of Queensland and Adelaide University,
+retain full rights to their own logos, respectively.

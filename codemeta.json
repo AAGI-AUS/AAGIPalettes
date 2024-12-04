@@ -24,6 +24,22 @@
       "@id": "https://orcid.org/0000-0002-0061-8359"
     }
   ],
+  "copyrightHolder": [
+    {
+      "@type": "Organization",
+      "name": "Curtin University of Technology"
+    },
+    {
+      "@type": "Organization",
+      "name": "Grains Research and Development Corporation"
+    }
+  ],
+  "funder": [
+    {
+      "@type": "Organization",
+      "name": "Grains Research and Development Corporation"
+    }
+  ],
   "maintainer": [
     {
       "@type": "Person",
@@ -105,7 +121,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "185.569KB",
+  "fileSize": "186.108KB",
   "readme": "https://github.com/AAGI-AUS/AAGIPalettes/blob/main/README.md",
   "contIntegration": "https://github.com/AAGI-AUS/AAGIPalettes/actions/workflows/R-CMD-check.yaml",
   "developmentStatus": "https://www.repostatus.org/#active"

@@ -79,8 +79,8 @@ x <- interpolate_aagi_colours()
 wt_vals <- x(length(unique(round(mtcars$wt, 1))))
 
 ggplot(mtcars, aes(x = mpg, y = hp, colour = as.factor(round(wt, 1)))) +
-geom_point() +
-scale_colour_manual("Weight", values = wt_vals)
+  geom_point() +
+  scale_colour_manual("Weight", values = wt_vals)
 ```
 
 <img src="man/figures/README-interpolate_colours-1.png" width="100%" />

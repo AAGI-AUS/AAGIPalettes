@@ -1,7 +1,7 @@
 #' AAGI Palette Plots
 #'
 #' A quick and dirty way to show \acronym{AAGI} colours in a palette plot.
-#' 
+#'
 #' @param name A either `aagi_colours` or a palette name from the lists below.
 #' @param n `Numeric` Number of different colours in the palette, minimum 3,
 #'   maximum depends on the palette. Defaults to `5`.  Ignored if name is
@@ -15,7 +15,7 @@
 #'   extremes at both ends of the data range.  The critical class or break in
 #'   the middle of the legend is emphasized with light colours and low and high
 #'   extremes are emphasized with dark colours that have contrasting hues.
-#' 
+#'
 #' The sequential palettes names are:
 #' * \dQuote{aagi_blues},
 #' * \dQuote{aagi_bright_greens},
@@ -52,15 +52,14 @@
 #' @export
 #'
 #' @examples
-#' 
+#'
 #' # display the official AAGI colours
 #' display_aagi_cols(name = "aagi_colours")
-#' 
+#'
 #' # display five colours from the Blue Orange diverging palette
 #' display_aagi_cols(name = "aagi_BuOr")
 #'
 display_aagi_cols <- function(name, n = NULL) {
-
   if (!inherits(name, "character")) {
     cli::cli_abort(
       c(x = "The {.arg name} must be a {.cls character} value.")

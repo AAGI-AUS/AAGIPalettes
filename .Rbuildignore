@@ -5,6 +5,6 @@
 ^pkgdown$
 ^codemeta\.json$
 ^README\.Rmd$
-^COPYRIGHT\.md$
+^COPYRIGHT$
 ^.*\.Rproj$
 ^\.Rproj\.user$

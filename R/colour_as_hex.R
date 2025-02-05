@@ -12,6 +12,8 @@
 #' # return AAGI Black, Bright Green and Orange as hex codes
 #' colour_as_hex(name = c("AAGI Black", "AAGI Bright Green", "AAGI Orange"))
 #'
+#' @returns A string value that consists of the corresponding colour hex code
+#' that was requested.
 #' @export
 colour_as_hex <- function(name = c(
                             "AAGI Black",

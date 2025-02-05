@@ -23,7 +23,7 @@ for more.}
 the default order is used. If \code{-1}, the order of colours is reversed.}
 }
 \value{
-A vector of hexadecimal colour codes
+A vector of hexadecimal colour codes.
 }
 \description{
 \acronym{AAGI} palettes for use in charts and plots based on official
@@ -32,8 +32,8 @@ maps and other graphical outputs.  These palettes are intended to be
 colour-blind friendly, while still being based on and include official
 \acronym{AAGI} colours but not all will be official \acronym{AAGI} colours.
 They are are palettes that are intended to be useful for creating plots
-that incorporate come official  \acronym{AAGI} colours but they may not all
-be official \acronym{AAGI} colours.
+that incorporate come official  \acronym{AAGI} colours but they may not
+all be official \acronym{AAGI} colours.
 \subsection{List of available palettes}{
 \subsection{Diverging palettes}{
 \itemize{

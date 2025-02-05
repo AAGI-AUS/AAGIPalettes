@@ -6,8 +6,8 @@
 #'   colour-blind friendly, while still being based on and include official
 #'   \acronym{AAGI} colours but not all will be official \acronym{AAGI} colours.
 #'   They are are palettes that are intended to be useful for creating plots
-#'   that incorporate come official  \acronym{AAGI} colours but they may not all
-#'   be official \acronym{AAGI} colours.
+#'   that incorporate come official  \acronym{AAGI} colours but they may not
+#'   all be official \acronym{AAGI} colours.
 #' ## List of available palettes
 #' ### Diverging palettes
 #'  * "aagi_BrYl" (11 stops),
@@ -58,7 +58,7 @@
 #' # diverging red teal colours with 11 stops
 #' aagi_palettes(n = 11, name = "aagi_RdTl", direction = 1)
 #'
-#' @return A vector of hexadecimal colour codes
+#' @returns A vector of hexadecimal colour codes.
 #' @export
 
 aagi_palettes <- function(n,

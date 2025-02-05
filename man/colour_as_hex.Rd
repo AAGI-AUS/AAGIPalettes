@@ -13,6 +13,10 @@ colour_as_hex(
 \item{name}{Character names of \acronym{AAGI} colours. Multiple values are
 allowed.}
 }
+\value{
+A string value that consists of the corresponding colour hex code
+that was requested.
+}
 \description{
 Use plain English colour names for AAGI colours to get the hex codes.
 }

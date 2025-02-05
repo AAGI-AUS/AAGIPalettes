@@ -12,7 +12,7 @@ interpolate_aagi_colours(
 )
 }
 \arguments{
-\item{colours}{(\code{Character}; given names of AAGI colours to use in the
+\item{colours}{\code{Character}; given names of AAGI colours to use in the
 interpolation. Defaults to "AAGI Orange", "AAGI Yellow",
 "AAGI Bright Green", "AAGI Teal", "AAGI Blue" in that order.}
 
@@ -28,8 +28,8 @@ A function that takes a single value and makes that many colours.
 \description{
 Takes a \acronym{AAGI} colour palette and generates more colours from it, so
 that there are enough to make your chart.  The interpolation method is set
-to \code{spline} (the default is \code{linear}) in an attempt to reduce the number of
-vomit colours that get produced when generating many colours.
+to \code{spline} (the default is \code{linear}) in an attempt to reduce the number
+of vomit colours that get produced when generating many colours.
 }
 \examples{
 library(ggplot2)

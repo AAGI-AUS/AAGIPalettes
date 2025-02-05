@@ -2,10 +2,10 @@
 #'
 #' Takes a \acronym{AAGI} colour palette and generates more colours from it, so
 #'   that there are enough to make your chart.  The interpolation method is set
-#'   to `spline` (the default is `linear`) in an attempt to reduce the number of
-#'   vomit colours that get produced when generating many colours.
+#'   to `spline` (the default is `linear`) in an attempt to reduce the number
+#'   of vomit colours that get produced when generating many colours.
 #'
-#' @param colours (`Character`; given names of AAGI colours to use in the
+#' @param colours `Character`; given names of AAGI colours to use in the
 #'   interpolation. Defaults to "AAGI Orange", "AAGI Yellow",
 #'   "AAGI Bright Green", "AAGI Teal", "AAGI Blue" in that order.
 #' @param direction	`Integer` Sets the order of colours in the scale.  If `1`,

@@ -28,12 +28,8 @@ This repository contains the code for the R package {AAGIPalettes}, which once i
 You can install {AAGIPalettes} like so:
 
 ```r
-if (!requireNamespace("remotes", quietly = TRUE)) {
-  install.packages("remotes")
-}
-remotes::install_github("AAGI-AUS/AAGIPalettes",
-                        dependencies = TRUE
-)
+# install.packages("pak")
+pak::pak("AAGI-AUS/AAGIPalettes")
 ```
 
 ## Quick start

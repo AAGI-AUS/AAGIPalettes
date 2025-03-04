@@ -15,16 +15,18 @@
 #' @returns A string value that consists of the corresponding colour hex code
 #' that was requested.
 #' @export
-colour_as_hex <- function(name = c(
-                            "AAGI Black",
-                            "AAGI Bright Green",
-                            "AAGI Blue",
-                            "AAGI Teal",
-                            "AAGI Green",
-                            "AAGI Yellow",
-                            "AAGI Orange",
-                            "AAGI Grey"
-                          )) {
+colour_as_hex <- function(
+  name = c(
+    "AAGI Black",
+    "AAGI Bright Green",
+    "AAGI Blue",
+    "AAGI Teal",
+    "AAGI Green",
+    "AAGI Yellow",
+    "AAGI Orange",
+    "AAGI Grey"
+  )
+) {
   name <- rlang::arg_match(name, multiple = TRUE)
 
   return(unname(AAGIPalettes::aagi_colours[name]))

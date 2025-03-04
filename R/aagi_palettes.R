@@ -61,28 +61,30 @@
 #' @returns A vector of hexadecimal colour codes.
 #' @export
 
-aagi_palettes <- function(n,
-                          name = c(
-                            "aagi_BrYl",
-                            "aagi_BuOr",
-                            "aagi_BuYl",
-                            "aagi_GnYl",
-                            "aagi_RdBu",
-                            "aagi_RdTl",
-                            "aagi_RdYl",
-                            "aagi_TlGn",
-                            "aagi_TlYl",
-                            "aagi_TlGnYl",
-                            "aagi_blues",
-                            "aagi_bright_greens",
-                            "aagi_greens",
-                            "aagi_greys",
-                            "aagi_reds",
-                            "aagi_teals",
-                            "aagi_oranges",
-                            "aagi_yellows"
-                          ),
-                          direction = 1L) {
+aagi_palettes <- function(
+  n,
+  name = c(
+    "aagi_BrYl",
+    "aagi_BuOr",
+    "aagi_BuYl",
+    "aagi_GnYl",
+    "aagi_RdBu",
+    "aagi_RdTl",
+    "aagi_RdYl",
+    "aagi_TlGn",
+    "aagi_TlYl",
+    "aagi_TlGnYl",
+    "aagi_blues",
+    "aagi_bright_greens",
+    "aagi_greens",
+    "aagi_greys",
+    "aagi_reds",
+    "aagi_teals",
+    "aagi_oranges",
+    "aagi_yellows"
+  ),
+  direction = 1L
+) {
   name <- rlang::arg_match(name)
 
   n <- as.integer(n)
@@ -95,12 +97,16 @@ aagi_palettes <- function(n,
       )
     )
     n <- 3
-  } else if (n > 7 && name %in% c(
-    "aagi_blues",
-    "aagi_bright_greens",
-    "aagi_greens",
-    "aagi_yellows"
-  )) {
+  } else if (
+    n > 7 &&
+      name %in%
+        c(
+          "aagi_blues",
+          "aagi_bright_greens",
+          "aagi_greens",
+          "aagi_yellows"
+        )
+  ) {
     cli::cli_warn(
       c(
         i = "You have requested >7 values for a palette that only has 7 total.
@@ -108,12 +114,16 @@ aagi_palettes <- function(n,
       )
     )
     n <- 7
-  } else if (n > 9 && name %in% c(
-    "aagi_oranges",
-    "aagi_reds",
-    "aagi_teals",
-    "aagi_greens"
-  )) {
+  } else if (
+    n > 9 &&
+      name %in%
+        c(
+          "aagi_oranges",
+          "aagi_reds",
+          "aagi_teals",
+          "aagi_greens"
+        )
+  ) {
     cli::cli_warn(
       c(
         i = "You have requested >9 values for a palette that only has 9 total.
@@ -140,8 +150,10 @@ aagi_palettes <- function(n,
     )
   }
 
-  p <- switch(name,
-    aagi_BrYl = switch(n - 2,
+  p <- switch(
+    name,
+    aagi_BrYl = switch(
+      n - 2,
       # 3
       c("#380100", "#965a24", "#ffbc42"),
       # 4
@@ -218,7 +230,8 @@ aagi_palettes <- function(n,
         "#ffbc42"
       )
     ),
-    aagi_BuOr = switch(n - 2,
+    aagi_BuOr = switch(
+      n - 2,
       c("#648fd2", "#fcfdfe", "#ec8525"),
       # 4
       c("#648fd2", "#b4c4e8", "#fdbb89", "#ec8525"),
@@ -294,7 +307,8 @@ aagi_palettes <- function(n,
         "#ec8525"
       )
     ),
-    aagi_BuYl = switch(n - 2,
+    aagi_BuYl = switch(
+      n - 2,
       # 3
       c("#648fd2", "#edf2fa", "#ffbc42"),
       # 4
@@ -371,7 +385,8 @@ aagi_palettes <- function(n,
         "#ffbc42"
       )
     ),
-    aagi_GnYl = switch(n - 2,
+    aagi_GnYl = switch(
+      n - 2,
       # 3
       c("#54921e", "#f4fcee", "#ffbc42"),
       # 4
@@ -448,7 +463,8 @@ aagi_palettes <- function(n,
         "#ffbc42"
       )
     ),
-    aagi_RdBu = switch(n - 2,
+    aagi_RdBu = switch(
+      n - 2,
       # 3
       c("#8b0b00", "#ffeeed", "#648fd2"),
       # 4
@@ -525,7 +541,8 @@ aagi_palettes <- function(n,
         "#648fd2"
       )
     ),
-    aagi_RdTl = switch(n - 2,
+    aagi_RdTl = switch(
+      n - 2,
       # 3
       c("#8b0b00", "#ffeeed", "#00808b"),
       # 4
@@ -602,7 +619,8 @@ aagi_palettes <- function(n,
         "#00808b"
       )
     ),
-    aagi_RdYl = switch(n - 2,
+    aagi_RdYl = switch(
+      n - 2,
       # 3
       c("#8b0b00", "#c66b1e", "#ffbc42"),
       # 4
@@ -629,7 +647,8 @@ aagi_palettes <- function(n,
         "#ffbc42"
       )
     ),
-    aagi_TlGn = switch(n - 2,
+    aagi_TlGn = switch(
+      n - 2,
       # 3
       c("#00808b", "#edfeff", "#b6d438"),
       # 4
@@ -706,7 +725,8 @@ aagi_palettes <- function(n,
         "#b6d438"
       )
     ),
-    aagi_TlGnYl = switch(n - 2,
+    aagi_TlGnYl = switch(
+      n - 2,
       # 3
       c("#00808b", "#82a76b", "#ffbc42"),
       # 4
@@ -783,7 +803,8 @@ aagi_palettes <- function(n,
         "#ffbc42"
       )
     ),
-    aagi_TlYl = switch(n - 2,
+    aagi_TlYl = switch(
+      n - 2,
       # 3
       c("#00808b", "#edfeff", "#ffbc42"),
       # 4
@@ -860,7 +881,8 @@ aagi_palettes <- function(n,
         "#ffbc42"
       )
     ),
-    aagi_blues = switch(n - 2,
+    aagi_blues = switch(
+      n - 2,
       # 3
       c("#648fd2", "#b4c4e8", "#fcfdfe"),
       # 4
@@ -887,7 +909,8 @@ aagi_palettes <- function(n,
         "#fcfdfe"
       )
     ),
-    aagi_bright_greens = switch(n - 2,
+    aagi_bright_greens = switch(
+      n - 2,
       # 3
       c("#b6d438", "#dee99e", "#fdfefa"),
       # 4
@@ -914,7 +937,8 @@ aagi_palettes <- function(n,
         "#fdfefa"
       )
     ),
-    aagi_greens = switch(n - 2,
+    aagi_greens = switch(
+      n - 2,
       # 3
       c("#54921e", "#a6c687", "#f4fcee"),
       # 4
@@ -964,7 +988,8 @@ aagi_palettes <- function(n,
         "#f4fcee"
       )
     ),
-    aagi_greys = switch(n - 2,
+    aagi_greys = switch(
+      n - 2,
       # 3
       c("#414042", "#999899", "#fbfbfb"),
       # 4
@@ -1014,7 +1039,8 @@ aagi_palettes <- function(n,
         "#fbfbfb"
       )
     ),
-    aagi_reds = switch(n - 2,
+    aagi_reds = switch(
+      n - 2,
       # 3
       c("#8b0b00", "#cf8875", "#fdfaf9"),
       # 4
@@ -1064,7 +1090,8 @@ aagi_palettes <- function(n,
         "#fdfaf9"
       )
     ),
-    aagi_teals = switch(n - 2,
+    aagi_teals = switch(
+      n - 2,
       # 3
       c("#00808b", "#8abec3", "#edfeff"),
       # 4
@@ -1114,7 +1141,8 @@ aagi_palettes <- function(n,
         "#edfeff"
       )
     ),
-    aagi_oranges = switch(n - 2,
+    aagi_oranges = switch(
+      n - 2,
       # 3
       c("#ec8525", "#fdbb89", "#fdf2e9"),
       # 4
@@ -1164,7 +1192,8 @@ aagi_palettes <- function(n,
         "#fdf2e9"
       )
     ),
-    aagi_yellows = switch(n - 2,
+    aagi_yellows = switch(
+      n - 2,
       # 3
       c("#ffbc42", "#ffdda2", "#fffbf3"),
       # 4

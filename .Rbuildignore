@@ -8,3 +8,4 @@
 ^COPYRIGHT$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^air\.toml$

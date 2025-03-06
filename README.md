@@ -91,10 +91,11 @@ ggplot(mtcars, aes(x = mpg, y = hp, colour = as.factor(round(wt, 1)))) +
 <img src="man/figures/README-interpolate_colours-1.png" alt="plot of chunk interpolate_colours" width="100%" />
 <p class="caption">plot of chunk interpolate_colours</p>
 </div>
+
 ## Code of Conduct
 
 Please note that the AAGIPalettes project is released with a [Contributor Code of Conduct](https://AAGI-AUS.github.io/AAGIPalettes/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
-,
+
 ## Logo Rights
 
 The logo of this project and the AAGI strategic partners do not come under MIT License.

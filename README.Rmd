@@ -75,10 +75,11 @@ ggplot(mtcars, aes(x = mpg, y = hp, colour = as.factor(round(wt, 1)))) +
   geom_point() +
   scale_colour_manual("Weight", values = wt_vals)
 ```
+
 ## Code of Conduct
 
 Please note that the AAGIPalettes project is released with a [Contributor Code of Conduct](https://AAGI-AUS.github.io/AAGIPalettes/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
-,
+
 ## Logo Rights
 
 The logo of this project and the AAGI strategic partners do not come under MIT License.

@@ -39,10 +39,10 @@ You can see the hex code values in a named vector like so.
 library("AAGIPalettes")
 
 aagi_colours
-#> AAGI Bright Green         AAGI Teal         AAGI Blue        AAGI Green       AAGI Yellow 
-#>         "#B6D438"         "#00808b"         "#648FD2"         "#54921E"         "#FFBC42" 
-#>       AAGI Orange        AAGI Black         AAGI Grey 
-#>         "#ec8525"         "#414042"         "#F2F2F2"
+#> AAGI Bright Green         AAGI Teal         AAGI Blue        AAGI Green 
+#>         "#B6D438"         "#00808b"         "#648FD2"         "#54921E" 
+#>       AAGI Yellow       AAGI Orange        AAGI Black         AAGI Grey 
+#>         "#FFBC42"         "#ec8525"         "#414042"         "#F2F2F2"
 ```
 
 ### Viewing Colours
@@ -91,7 +91,10 @@ ggplot(mtcars, aes(x = mpg, y = hp, colour = as.factor(round(wt, 1)))) +
 <img src="man/figures/README-interpolate_colours-1.png" alt="plot of chunk interpolate_colours" width="100%" />
 <p class="caption">plot of chunk interpolate_colours</p>
 </div>
+## Code of Conduct
 
+Please note that the AAGIPalettes project is released with a [Contributor Code of Conduct](https://AAGI-AUS.github.io/AAGIPalettes/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+,
 ## Logo Rights
 
 The logo of this project and the AAGI strategic partners do not come under MIT License.

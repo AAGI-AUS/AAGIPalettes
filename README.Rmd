@@ -52,19 +52,19 @@ aagi_colours
 {AAGIPalette} provides limited functionality for viewing and working with colours.
 You can plot the colours or palettes in the package as follows.
 
-```{r plot_official_colours}
+```{r plot_official_colours, fig.cap = "A plot of the official AAGI colours."}
 display_aagi_cols("aagi_colours")
 ```
 
 Display the "aagi_BuOr" palette with 9 stops.
 
-```{r plot_BuOR}
+```{r plot_BuOR, fig.cap = "A plot of the AAGI BuOr palette with 9 stops."}
 display_aagi_cols(name = "aagi_BuOr", n = 9)
 ```
 
 ### Interpolating Colours
 
-```{r interpolate_colours}
+```{r interpolate_colours, fig.cap = "A plot demonstrating the colour interpolation functionality of the package."}
 library(ggplot2)
 
 x <- interpolate_aagi_colours()

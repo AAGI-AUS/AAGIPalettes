@@ -56,8 +56,8 @@ display_aagi_cols("aagi_colours")
 ```
 
 <div class="figure">
-<img src="man/figures/README-plot_official_colours-1.png" alt="plot of chunk plot_official_colours" width="100%" />
-<p class="caption">plot of chunk plot_official_colours</p>
+<img src="man/figures/README-plot_official_colours-1.png" alt="A plot of the official AAGI colours." width="100%" />
+<p class="caption">A plot of the official AAGI colours.</p>
 </div>
 
 Display the "aagi_BuOr" palette with 9 stops.
@@ -68,8 +68,8 @@ display_aagi_cols(name = "aagi_BuOr", n = 9)
 ```
 
 <div class="figure">
-<img src="man/figures/README-plot_BuOR-1.png" alt="plot of chunk plot_BuOR" width="100%" />
-<p class="caption">plot of chunk plot_BuOR</p>
+<img src="man/figures/README-plot_BuOR-1.png" alt="A plot of the AAGI BuOr palette with 9 stops." width="100%" />
+<p class="caption">A plot of the AAGI BuOr palette with 9 stops.</p>
 </div>
 
 ### Interpolating Colours
@@ -88,8 +88,8 @@ ggplot(mtcars, aes(x = mpg, y = hp, colour = as.factor(round(wt, 1)))) +
 ```
 
 <div class="figure">
-<img src="man/figures/README-interpolate_colours-1.png" alt="plot of chunk interpolate_colours" width="100%" />
-<p class="caption">plot of chunk interpolate_colours</p>
+<img src="man/figures/README-interpolate_colours-1.png" alt="A plot demonstrating the colour interpolation functionality of the package." width="100%" />
+<p class="caption">A plot demonstrating the colour interpolation functionality of the package.</p>
 </div>
 
 ## Code of Conduct

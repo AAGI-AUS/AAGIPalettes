@@ -61,7 +61,7 @@ always is 3, but the largest number is different for different palettes.
 It is given together with the palette names in the following table.}
 }
 \value{
-\code{NULL}. Called for its side-effects, a plot of the given palette.
+Called for its side-effects, a plot of the given palette.
 }
 \description{
 A quick and dirty way to show \acronym{AAGI} colours in a palette plot.

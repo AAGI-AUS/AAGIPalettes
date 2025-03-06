@@ -6,7 +6,7 @@
 #'   colour-blind friendly, while still being based on and include official
 #'   \acronym{AAGI} colours but not all will be official \acronym{AAGI} colours.
 #'   They are are palettes that are intended to be useful for creating plots
-#'   that incorporate come official  \acronym{AAGI} colours but they may not
+#'   that incorporate come official \acronym{AAGI} colours but they may not
 #'   all be official \acronym{AAGI} colours.
 #' ## List of available palettes
 #' ### Diverging palettes

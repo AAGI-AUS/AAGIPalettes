@@ -48,7 +48,7 @@
 #'  always is 3, but the largest number is different for different palettes.
 #'  It is given together with the palette names in the following table.
 
-#' @returns `NULL`. Called for its side-effects, a plot of the given palette.
+#' @returns Called for its side-effects, a plot of the given palette.
 #' @export
 #'
 #' @examples

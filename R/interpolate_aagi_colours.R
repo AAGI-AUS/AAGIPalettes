@@ -31,17 +31,16 @@
 #' @export
 #'
 interpolate_aagi_colours <- function(
-  colours = c(
-    "AAGI Orange",
-    "AAGI Yellow",
-    "AAGI Bright Green",
-    "AAGI Green",
-    "AAGI Teal",
-    "AAGI Blue"
-  ),
-  direction = 1,
-  ...
-) {
+    colours = c(
+      "AAGI Orange",
+      "AAGI Yellow",
+      "AAGI Bright Green",
+      "AAGI Green",
+      "AAGI Teal",
+      "AAGI Blue"
+    ),
+    direction = 1,
+    ...) {
   colours <- rlang::arg_match(
     colours,
     multiple = TRUE

@@ -8,13 +8,13 @@
   "codeRepository": "https://github.com/AAGI-AUS/AAGIPalettes",
   "issueTracker": "https://github.com/AAGI-AUS/AAGIPalettes/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.0.0.9000",
+  "version": "0.0.1",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.4.2 (2024-10-31)",
+  "runtimePlatform": "R version 4.3.3 (2024-02-29)",
   "author": [
     {
       "@type": "Person",
@@ -121,7 +121,8 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "185.907KB",
+  "fileSize": "165.766KB",
+  "releaseNotes": "https://github.com/AAGI-AUS/AAGIPalettes/blob/master/NEWS.md",
   "readme": "https://github.com/AAGI-AUS/AAGIPalettes/blob/main/README.md",
   "contIntegration": "https://github.com/AAGI-AUS/AAGIPalettes/actions/workflows/R-CMD-check.yaml",
   "developmentStatus": "https://www.repostatus.org/#active"

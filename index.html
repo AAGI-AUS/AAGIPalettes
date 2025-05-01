@@ -59,8 +59,15 @@
 </h2>
 <p>You can install {AAGIPalettes} like so:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"AAGI-AUS/AAGIPalettes"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span></span>
+<span><span class="va">o</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span><span class="op">)</span> <span class="co"># store default options</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>pkg.build_vignettes <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://pak.r-lib.org/" class="external-link">"pak"</a></span><span class="op">)</span><span class="op">)</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"pak"</span><span class="op">)</span></span>
+<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"AAGI-AUS/AAGIPalettes"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span><span class="va">o</span><span class="op">)</span> <span class="co"># reset options</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="quick-start">Quick start<a class="anchor" aria-label="anchor" href="#quick-start"></a>
@@ -71,7 +78,7 @@
 </h3>
 <p>{AAGIPalette} provides a data object of the official AAGI colours from the comms guide. You can see the hex code values in a named vector like so.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/AAGI-AUS/AAGIPalettes" class="external-link">"AAGIPalettes"</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/AAGI-AUS/AAGIPalettes" class="external-link">AAGIPalettes</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">aagi_colours</span></span>
 <span><span class="co">#&gt; AAGI Bright Green         AAGI Teal         AAGI Blue        AAGI Green </span></span>
@@ -82,7 +89,7 @@
 <div class="section level3">
 <h3 id="viewing-colours">Viewing Colours<a class="anchor" aria-label="anchor" href="#viewing-colours"></a>
 </h3>
-<p>{AAGIPalette} provides limited functionality for viewing and working with colours. You can plot the colours or palettes in the package as follows.</p>
+<p>{AAGIPalettes} provides limited functionality for viewing and working with colours. You can plot the colours or palettes in the package as follows.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/display_aagi_cols.html">display_aagi_cols</a></span><span class="op">(</span><span class="st">"aagi_colours"</span><span class="op">)</span></span></code></pre></div>
 <div class="figure">
@@ -165,8 +172,8 @@ A plot demonstrating the colour interpolation functionality of the package.
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Adam H. Sparks <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-0061-8359" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Grains Research and Development Corporation <br><small class="roles"> Funder, copyright holder </small>  </li>
+<li>Adam H. Sparks <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-0061-8359" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a>  </li>
+<li>Grains Research and Development Corporation <br><small class="roles"> Funder, copyright holder </small>   </li>
 <li><a href="authors.html">More about authors...</a></li>
 </ul>
 </div>
@@ -188,7 +195,7 @@ A plot demonstrating the colour interpolation functionality of the package.
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.2.</p>
 </div>
 
     </footer>

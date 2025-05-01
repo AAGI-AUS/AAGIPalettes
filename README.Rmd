@@ -28,8 +28,15 @@ This repository contains the code for the R package {AAGIPalettes}, which once i
 You can install {AAGIPalettes} like so:
 
 ```r
-# install.packages("pak")
+
+o <- options() # store default options
+
+options(pkg.build_vignettes = TRUE)
+if (!require("pak"))
+  install.packages("pak")
 pak::pak("AAGI-AUS/AAGIPalettes")
+
+options(o) # reset options
 ```
 
 ## Quick start
@@ -42,14 +49,14 @@ Following are some quick examples of {AAGIPalettes} functionality.
 You can see the hex code values in a named vector like so.
 
 ```{r view_official_colours}
-library("AAGIPalettes")
+library(AAGIPalettes)
 
 aagi_colours
 ```
 
 ### Viewing Colours
 
-{AAGIPalette} provides limited functionality for viewing and working with colours.
+{AAGIPalettes} provides limited functionality for viewing and working with colours.
 You can plot the colours or palettes in the package as follows.
 
 ```{r plot_official_colours, fig.cap = "A plot of the official AAGI colours."}

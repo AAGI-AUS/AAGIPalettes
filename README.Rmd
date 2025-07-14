@@ -23,12 +23,31 @@ knitr::opts_chunk$set(
 
 This repository contains the code for the R package {AAGIPalettes}, which once installed in your R session (local or RStudio Server), provides helper functions, data and palettes for working with AAGI colours.
 
+
 ## Installation instructions
 
-You can install {AAGIPalettes} like so:
+{AAGIPalettes} is available through the [R-Universe](https://r-universe.dev/search) with pre-built binaries (this is the easy way).
+
+To get started:
+
+### Enable this universe
 
 ```r
+options(repos = c(
+    maelle = 'https://aagi-aus.r-universe.dev',
+    CRAN = 'https://cloud.r-project.org'))
+```
 
+
+### Install
+
+```r
+install.packages("AAGIPalettes")
+```
+
+### The hard(er) way
+
+```r
 o <- options() # store default options
 
 options(pkg.build_vignettes = TRUE)

@@ -14,7 +14,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.5.0 (2025-04-11)",
+  "runtimePlatform": "R version 4.5.1 (2025-06-13)",
   "author": [
     {
       "@type": "Person",
@@ -27,7 +27,7 @@
   "copyrightHolder": [
     {
       "@type": "Organization",
-      "name": "Curtin University of Technology"
+      "name": "Curtin University"
     },
     {
       "@type": "Organization",
@@ -121,7 +121,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "165.891KB",
+  "fileSize": "166.404KB",
   "releaseNotes": "https://github.com/AAGI-AUS/AAGIPalettes/blob/master/NEWS.md",
   "readme": "https://github.com/AAGI-AUS/AAGIPalettes/blob/main/README.md",
   "contIntegration": "https://github.com/AAGI-AUS/AAGIPalettes/actions/workflows/R-CMD-check.yaml",

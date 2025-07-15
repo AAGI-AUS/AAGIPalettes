@@ -24,7 +24,7 @@ Useful links:
 
 Other contributors:
 \itemize{
-  \item Curtin University (\href{https://ror.org/02n415q13}{ROR}) (Provided support through Adam Sparks's, Zhanglong Cao's and Braden Thorne's time.) [copyright holder]
+  \item Curtin University (\href{https://ror.org/02n415q13}{ROR}) (Provided support through Adam Sparks's time) [copyright holder]
   \item Grains Research and Development Corporation (\href{https://ror.org/02xwr1996}{ROR}) (GRDC Project CUR2210-005OPX (AAGI-CU)) [funder, copyright holder]
 }
 

@@ -34,7 +34,7 @@ To get started:
 
 ```r
 options(repos = c(
-    maelle = 'https://aagi-aus.r-universe.dev',
+    aagi_aus = 'https://aagi-aus.r-universe.dev',
     CRAN = 'https://cloud.r-project.org'))
 ```
 

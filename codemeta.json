@@ -121,7 +121,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "166.328KB",
+  "fileSize": "166.455KB",
   "releaseNotes": "https://github.com/AAGI-AUS/AAGIPalettes/blob/master/NEWS.md",
   "readme": "https://github.com/AAGI-AUS/AAGIPalettes/blob/main/README.md",
   "contIntegration": "https://github.com/AAGI-AUS/AAGIPalettes/actions/workflows/R-CMD-check.yaml",

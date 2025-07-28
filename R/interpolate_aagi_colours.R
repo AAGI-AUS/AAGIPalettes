@@ -31,23 +31,24 @@
 #' @export
 #'
 interpolate_aagi_colours <- function(
-    colours = c(
-      "AAGI Orange",
-      "AAGI Yellow",
-      "AAGI Bright Green",
-      "AAGI Green",
-      "AAGI Teal",
-      "AAGI Blue"
-    ),
-    direction = 1,
-    ...) {
+  colours = c(
+    "AAGI Orange",
+    "AAGI Yellow",
+    "AAGI Bright Green",
+    "AAGI Green",
+    "AAGI Teal",
+    "AAGI Blue"
+  ),
+  direction = 1,
+  ...
+) {
   colours <- rlang::arg_match(
     colours,
     multiple = TRUE
   )
 
   hex_vals <- colour_as_hex(colours)
-  if (direction == -1) {
+  if (direction == -1L) {
     hex_vals <- rev(hex_vals)
   }
   grDevices::colorRampPalette(hex_vals, ..., interpolate = "spline")

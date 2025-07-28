@@ -69,12 +69,12 @@ display_aagi_cols <- function(name, n = NULL) {
     return(scales::show_col(AAGIPalettes::aagi_colours))
   } else {
     if (is.null(n)) {
-      n <- 5
+      n <- 5L
     }
     return(scales::show_col(aagi_palettes(
       n = n,
       name = name,
-      direction = 1
+      direction = 1L
     )))
   }
 }

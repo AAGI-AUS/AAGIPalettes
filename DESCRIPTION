@@ -1,6 +1,6 @@
 Package: AAGIPalettes
 Title: AAGI Colours and Colour Palettes
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(
     person("Adam H.", "Sparks", , "adamhsparks@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0061-8359")),
@@ -19,7 +19,7 @@ URL: https://github.com/AAGI-AUS/AAGIPalettes,
     https://AAGI-AUS.github.io/AAGIPalettes/
 BugReports: https://github.com/AAGI-AUS/AAGIPalettes/issues
 Depends: 
-    R (>= 2.10)
+    R (>= 4.1.0)
 Imports: 
     cli,
     rlang,
@@ -31,7 +31,7 @@ Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2.9000
+RoxygenNote: 7.3.3
 X-schema.org-applicationCategory: Tools
 X-schema.org-isPartOf: 
     https://grdc.com.au/research/partnerships-and-initiatives/strategic-partnerships/aagi

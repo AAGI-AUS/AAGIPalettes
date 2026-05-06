@@ -19,7 +19,7 @@ interpolation. Defaults to "AAGI Orange", "AAGI Yellow",
 \item{direction}{\code{Integer} Sets the order of colours in the scale.  If \code{1},
 the default order is used. If \code{-1}, the order of colours is reversed.}
 
-\item{...}{Additional arguments to pass to \code{\link[grDevices:colorRamp]{grDevices::colorRampPalette()}},
+\item{...}{Additional arguments to pass to \code{\link[grDevices:colorRampPalette]{grDevices::colorRampPalette()}},
 see details here \code{\link[grDevices:colorRamp]{grDevices::colorRamp()}}.}
 }
 \value{

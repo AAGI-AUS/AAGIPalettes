@@ -16,6 +16,7 @@ To get started:
 ### Enable this universe
 
 ``` r
+
 options(
   repos = c(
     AAGI = 'https://aagi-aus.r-universe.dev',
@@ -27,12 +28,14 @@ options(
 ### Install
 
 ``` r
+
 install.packages("AAGIPalettes")
 ```
 
 ### The hard(er) way
 
 ``` r
+
 o <- options() # store default options
 
 options(pkg.build_vignettes = TRUE)
@@ -55,6 +58,7 @@ the comms guide. You can see the hex code values in a named vector like
 so.
 
 ``` r
+
 library(AAGIPalettes)
 
 aagi_colours
@@ -71,6 +75,7 @@ with colours. You can plot the colours or palettes in the package as
 follows.
 
 ``` r
+
 display_aagi_cols("aagi_colours")
 ```
 
@@ -82,6 +87,7 @@ A plot of the official AAGI colours.
 Display the “aagi_BuOr” palette with 9 stops.
 
 ``` r
+
 display_aagi_cols(name = "aagi_BuOr", n = 9)
 ```
 
@@ -93,6 +99,7 @@ A plot of the AAGI BuOr palette with 9 stops.
 ### Interpolating Colours
 
 ``` r
+
 library(ggplot2)
 
 x <- interpolate_aagi_colours()

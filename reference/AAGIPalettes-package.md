@@ -20,6 +20,11 @@ Useful links:
 **Maintainer**: Adam H. Sparks <adamhsparks@gmail.com>
 ([ORCID](https://orcid.org/0000-0002-0061-8359))
 
+Authors:
+
+- Adam H. Sparks <adamhsparks@gmail.com>
+  ([ORCID](https://orcid.org/0000-0002-0061-8359))
+
 Other contributors:
 
 - Curtin University ([ROR](https://ror.org/02n415q13)) (Provided support

@@ -92,6 +92,7 @@ Called for its side-effects, a plot of the given palette.
 ## Examples
 
 ``` r
+
 # display the official AAGI colours
 display_aagi_cols(name = "aagi_colours")
 

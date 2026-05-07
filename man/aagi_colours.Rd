@@ -22,7 +22,7 @@ aagi_colours
 }
 \description{
 A Vector of the official AAGI Colour Hex Codes.  Other colour palettes are
-provided via \link{data-aagi_palettes} for plotting purposes but may not
+provided via \link{aagi_palettes_list} for plotting purposes but may not
 considered to be "official" \acronym{AAGI} colours.
 }
 \concept{data}

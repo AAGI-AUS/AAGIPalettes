@@ -5,6 +5,7 @@
 #' @param direction Integer. If `1`, default order. If `-1`, reverse order.
 #'
 #' @returns A character vector of hexadecimal colour codes.
+#' @autoglobal
 #' @export
 aagi_palettes <- function(
   n,
@@ -51,7 +52,7 @@ aagi_palettes <- function(
   }
 
   # Look up palette in data
-  pal <- aagi_palettes_data[[name]]
+  pal <- aagi_palettes_list[[name]]
   if (is.null(pal)) {
     cli::cli_abort(c(x = "Unknown palette name: {.val {name}}."))
   }

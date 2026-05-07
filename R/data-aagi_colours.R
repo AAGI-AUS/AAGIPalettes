@@ -1,7 +1,7 @@
 #' Official AAGI Colours From the AAGI Comms Guide
 #'
 #' A Vector of the official AAGI Colour Hex Codes.  Other colour palettes are
-#'   provided via [data-aagi_palettes] for plotting purposes but may not
+#'   provided via [aagi_palettes_list] for plotting purposes but may not
 #'   considered to be "official" \acronym{AAGI} colours.
 #'
 #' @format A `vector` with eight (8) colours as hexadecimal values:

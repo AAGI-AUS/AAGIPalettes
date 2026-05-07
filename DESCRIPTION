@@ -1,6 +1,6 @@
 Package: AAGIPalettes
 Title: AAGI Colours and Colour Palettes
-Version: 0.0.2
+Version: 0.0.2.9000
 Authors@R: c(
     person("Adam H.", "Sparks", , "adamhsparks@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0061-8359")),
@@ -26,12 +26,16 @@ Imports:
     scales
 Suggests: 
     ggplot2,
+    roxyglobals,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
-Roxygen: list(markdown = TRUE)
+Roxygen: list(markdown = TRUE, roclets = c("collate", "namespace", "rd",
+    "roxyglobals::global_roclet"))
 X-schema.org-applicationCategory: Tools
 X-schema.org-isPartOf: 
     https://grdc.com.au/research/partnerships-and-initiatives/strategic-partnerships/aagi
 Config/roxygen2/version: 8.0.0
+Config/roxyglobals/filename: globals.R
+Config/roxyglobals/unique: FALSE

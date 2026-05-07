@@ -17,18 +17,18 @@
 #'
 #' @examples
 #' # List available palettes
-#' names(aagi_palettes_data)
+#' names(aagi_palettes_list)
 #'
 #' # Available 'n' values for a palette
-#' names(aagi_palettes_data[["aagi_RdTl"]])
+#' names(aagi_palettes_list[["aagi_RdTl"]])
 #'
 #' # Get the 11-stop RdTl palette
-#' aagi_palettes_data[["aagi_RdTl"]][["11"]]
+#' aagi_palettes_list[["aagi_RdTl"]][["11"]]
 #'
 #' # Reverse order (equivalent to direction = -1)
-#' rev(aagi_palettes_data[["aagi_RdTl"]][["11"]])
+#' rev(aagi_palettes_list[["aagi_RdTl"]][["11"]])
 #'
-#' @name data-aagi_palettes
+#' @name aagi_palettes_list
 #' @keywords datasets
 #' @docType data
 NULL

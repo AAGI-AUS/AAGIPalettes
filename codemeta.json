@@ -117,6 +117,11 @@
     },
     "3": {
       "@type": "SoftwareApplication",
+      "identifier": "grDevices",
+      "name": "grDevices"
+    },
+    "4": {
+      "@type": "SoftwareApplication",
       "identifier": "rlang",
       "name": "rlang",
       "provider": {
@@ -127,7 +132,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=rlang"
     },
-    "4": {
+    "5": {
       "@type": "SoftwareApplication",
       "identifier": "scales",
       "name": "scales",
@@ -143,7 +148,7 @@
   },
   "applicationCategory": "Tools",
   "isPartOf": "https://grdc.com.au/research/partnerships-and-initiatives/strategic-partnerships/aagi",
-  "fileSize": "157.06KB",
+  "fileSize": "157.076KB",
   "releaseNotes": "https://github.com/AAGI-AUS/AAGIPalettes/blob/main/NEWS.md",
   "readme": "https://github.com/AAGI-AUS/AAGIPalettes/blob/main/README.md",
   "contIntegration": "https://github.com/AAGI-AUS/AAGIPalettes/actions/workflows/R-CMD-check.yaml",

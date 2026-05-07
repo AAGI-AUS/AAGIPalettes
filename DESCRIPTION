@@ -23,8 +23,7 @@ Depends:
 Imports: 
     cli,
     grDevices,
-    rlang,
-    scales
+    rlang
 Suggests: 
     ggplot2,
     roxyglobals,

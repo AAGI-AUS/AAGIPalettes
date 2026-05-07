@@ -2,7 +2,7 @@
 
 A Vector of the official AAGI Colour Hex Codes. Other colour palettes
 are provided via
-[data-aagi_palettes](https://AAGI-AUS.github.io/AAGIPalettes/reference/data-aagi_palettes.md)
+[aagi_palettes_list](https://AAGI-AUS.github.io/AAGIPalettes/reference/aagi_palettes_list.md)
 for plotting purposes but may not considered to be "official" AAGI
 colours.
 

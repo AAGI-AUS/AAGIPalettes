@@ -31,14 +31,7 @@
 #' @export
 #'
 interpolate_aagi_colours <- function(
-  colours = c(
-    "AAGI Orange",
-    "AAGI Yellow",
-    "AAGI Bright Green",
-    "AAGI Green",
-    "AAGI Teal",
-    "AAGI Blue"
-  ),
+  colours = names(aagi_colours[c(6, 5, 1, 4, 2, 3)]),
   direction = 1,
   ...
 ) {
@@ -51,8 +44,9 @@ interpolate_aagi_colours <- function(
       c(x = "You have provided no colours for the palette.")
     )
   }
-  colours <- rlang::arg_match0(
+  colours <- rlang::arg_match(
     colours,
+    names(aagi_colours),
     multiple = TRUE
   )
 

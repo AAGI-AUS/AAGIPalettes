@@ -62,7 +62,6 @@ interpolate_aagi_colours <- function(
 
   if (direction == -1) {
     hex_vals <- rev(hex_vals)
-    gg
   }
   return(grDevices::colorRampPalette(hex_vals, ..., interpolate = "spline"))
 }

@@ -20,12 +20,10 @@
 #' The sequential palettes names are:
 #' * \dQuote{aagi_blues},
 #' * \dQuote{aagi_bright_greens},
-#' * \dQuote{aagi_BrYl},
 #' * \dQuote{aagi_greens},
 #' * \dQuote{aagi_greys},
 #' * \dQuote{aagi_reds},
 #' * \dQuote{aagi_oranges},
-#' * \dQuote{aagi_RdYl},
 #' * \dQuote{aagi_teals},
 #' * \dQuote{aagi_TlGnYl},
 #' * \dQuote{aagi_TlYl},
@@ -35,11 +33,13 @@
 #'  values up to 11 different values.
 #'
 #' The diverging palettes are:
+#' * \dQuote{aagi_BrYl}
 #' * \dQuote{aagi_BuOr},
 #' * \dQuote{aagi_BuYl},
 #' * \dQuote{aagi_GnYl},
 #' * \dQuote{aagi_RdBu},
 #' * \dQuote{aagi_RdTl},
+#' * \dQuote{aagi_RdYl},
 #' * \dQuote{aagi_TlGn}
 #'
 #' All the diverging palettes are available in variations from 3 different
@@ -65,24 +65,7 @@ display_aagi_cols <- function(name = "aagi_colours", n = NULL) {
     name,
     values = c(
       "aagi_colours",
-      "aagi_blues",
-      "aagi_bright_greens",
-      "aagi_BrYl",
-      "aagi_greens",
-      "aagi_greys",
-      "aagi_reds",
-      "aagi_oranges",
-      "aagi_RdYl",
-      "aagi_teals",
-      "aagi_TlGnYl",
-      "aagi_TlYl",
-      "aagi_yellows",
-      "aagi_BuOr",
-      "aagi_BuYl",
-      "aagi_GnYl",
-      "aagi_RdBu",
-      "aagi_RdTl",
-      "aagi_TlGn"
+      .aagi_colour_names
     )
   )
   if (name %in% c("aagi_colours")) {

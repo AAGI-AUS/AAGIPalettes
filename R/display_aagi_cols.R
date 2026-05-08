@@ -18,29 +18,29 @@
 #'   extremes are emphasized with dark colours that have contrasting hues.
 #'
 #' The sequential palettes names are:
+#' * \dQuote{aagi_BrYl}
 #' * \dQuote{aagi_blues},
 #' * \dQuote{aagi_bright_greens},
 #' * \dQuote{aagi_greens},
 #' * \dQuote{aagi_greys},
 #' * \dQuote{aagi_reds},
 #' * \dQuote{aagi_oranges},
+#' * \dQuote{aagi_RdYl},
 #' * \dQuote{aagi_teals},
 #' * \dQuote{aagi_TlGnYl},
-#' * \dQuote{aagi_TlYl},
 #' * \dQuote{aagi_yellows}
 #'
 #' All the sequential palettes are available in variations from 3 different
 #'  values up to 11 different values.
 #'
 #' The diverging palettes are:
-#' * \dQuote{aagi_BrYl}
 #' * \dQuote{aagi_BuOr},
 #' * \dQuote{aagi_BuYl},
 #' * \dQuote{aagi_GnYl},
 #' * \dQuote{aagi_RdBu},
 #' * \dQuote{aagi_RdTl},
-#' * \dQuote{aagi_RdYl},
-#' * \dQuote{aagi_TlGn}
+#' * \dQuote{aagi_TlGn},
+#' * \dQuote{aagi_TlYl}
 #'
 #' All the diverging palettes are available in variations from 3 different
 #'  values up to 11 different values.

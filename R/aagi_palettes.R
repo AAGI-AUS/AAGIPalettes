@@ -1,37 +1,18 @@
 #' Sequential and Diverging Colour Palettes for AAGI Graphical Outputs
 #'
-#' @param n Integer. Number of different colours in the palette.
 #' @param name Character. Name of the desired palette.
+#' @param n Integer. Number of different colours in the palette. Defaults to 5.
 #' @param direction Integer. If `1`, default order. If `-1`, reverse order.
 #'
 #' @returns A character vector of hexadecimal colour codes.
 #' @autoglobal
 #' @export
 aagi_palettes <- function(
+  name,
   n = 5,
-  name = c(
-    "aagi_BrYl",
-    "aagi_BuOr",
-    "aagi_BuYl",
-    "aagi_GnYl",
-    "aagi_RdBu",
-    "aagi_RdTl",
-    "aagi_RdYl",
-    "aagi_TlGn",
-    "aagi_TlYl",
-    "aagi_TlGnYl",
-    "aagi_blues",
-    "aagi_bright_greens",
-    "aagi_greens",
-    "aagi_greys",
-    "aagi_reds",
-    "aagi_teals",
-    "aagi_oranges",
-    "aagi_yellows"
-  ),
   direction = 1
 ) {
-  name <- rlang::arg_match(name)
+  name <- rlang::arg_match(name, .aagi_colour_names)
   n <- as.integer(n)
 
   .validate_direction(direction)
@@ -55,8 +36,6 @@ aagi_palettes <- function(
   ns_avail <- as.integer(names(pal))
   ns_avail <- sort(ns_avail)
 
-  # If requested n doesn't exist, clamp to nearest available <= n,
-  # otherwise to max available (this mimics your old “cap at max stops” behavior).
   if (!n %in% ns_avail) {
     if (n > max(ns_avail)) {
       cli::cli_warn(

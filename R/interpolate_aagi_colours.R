@@ -42,7 +42,7 @@ interpolate_aagi_colours <- function(
   direction = 1,
   ...
 ) {
-  colours <- rlang::arg_match(
+  colours <- rlang::arg_match0(
     colours,
     multiple = TRUE
   )

@@ -42,12 +42,23 @@ interpolate_aagi_colours <- function(
   direction = 1,
   ...
 ) {
+  colours_len <- length(colours)
+  if (colours_len == 1) {
+    cli::cli_warn(c(i = "Returning a palette with only one colour."))
+  }
+  if (colours_len < 1) {
+    cli::cli_abort(
+      c(x = "You have provided no colours for the palette.")
+    )
+  }
   colours <- rlang::arg_match0(
     colours,
     multiple = TRUE
   )
-
-  direction <- rlang::arg_match0(direction, c(-1, 1))
+  valid_directions <- c(-1, 1)
+  if (!direction %in% directions) {
+    cli::cli_abort(c(x = "{.arg direction} must be one of: {directions}"))
+  }
 
   hex_vals <- colour_as_hex(colours)
 

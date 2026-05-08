@@ -46,7 +46,7 @@ aagi_palettes <- function(
   if (n < 3L) {
     cli::cli_warn(
       c(
-        x = "You have requested <3 values for your palette.
+        i = "You have requested <3 values for your palette.
         However, {.arg n} should be >3. Returning a palette with 3 values."
       )
     )

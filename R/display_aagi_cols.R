@@ -61,11 +61,30 @@
 #' display_aagi_cols(name = "aagi_BuOr")
 #'
 display_aagi_cols <- function(name = "aagi_colours", n = NULL) {
-  if (!inherits(name, "character")) {
-    cli::cli_abort(
-      c(x = "The {.arg name} must be a {.cls character} value.")
+  name <- rlang::arg_match0(
+    name,
+    values = c(
+      "aagi_colours",
+      "aagi_blues",
+      "aagi_bright_greens",
+      "aagi_BrYl",
+      "aagi_greens",
+      "aagi_greys",
+      "aagi_reds",
+      "aagi_oranges",
+      "aagi_RdYl",
+      "aagi_teals",
+      "aagi_TlGnYl",
+      "aagi_TlYl",
+      "aagi_yellows",
+      "aagi_BuOr",
+      "aagi_BuYl",
+      "aagi_GnYl",
+      "aagi_RdBu",
+      "aagi_RdTl",
+      "aagi_TlGn"
     )
-  }
+  )
   if (name %in% c("aagi_colours")) {
     return(show_col_base(AAGIPalettes::aagi_colours))
   } else {

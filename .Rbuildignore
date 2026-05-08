@@ -11,3 +11,4 @@
 ^\.Rproj\.user$
 ^air\.toml$
 ^CODE_OF_CONDUCT\.md$
+^man/dot-validate_direction\.Rd$

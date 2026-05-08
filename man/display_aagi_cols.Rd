@@ -29,12 +29,10 @@ The sequential palettes names are:
 \itemize{
 \item \dQuote{aagi_blues},
 \item \dQuote{aagi_bright_greens},
-\item \dQuote{aagi_BrYl},
 \item \dQuote{aagi_greens},
 \item \dQuote{aagi_greys},
 \item \dQuote{aagi_reds},
 \item \dQuote{aagi_oranges},
-\item \dQuote{aagi_RdYl},
 \item \dQuote{aagi_teals},
 \item \dQuote{aagi_TlGnYl},
 \item \dQuote{aagi_TlYl},
@@ -46,11 +44,13 @@ values up to 11 different values.
 
 The diverging palettes are:
 \itemize{
+\item \dQuote{aagi_BrYl}
 \item \dQuote{aagi_BuOr},
 \item \dQuote{aagi_BuYl},
 \item \dQuote{aagi_GnYl},
 \item \dQuote{aagi_RdBu},
 \item \dQuote{aagi_RdTl},
+\item \dQuote{aagi_RdYl},
 \item \dQuote{aagi_TlGn}
 }
 

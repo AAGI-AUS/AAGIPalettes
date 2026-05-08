@@ -47,6 +47,8 @@ interpolate_aagi_colours <- function(
     multiple = TRUE
   )
 
+  direction <- rlang::arg_match0(direction, c(-1, 1))
+
   hex_vals <- colour_as_hex(colours)
   if (direction == -1L) {
     hex_vals <- rev(hex_vals)

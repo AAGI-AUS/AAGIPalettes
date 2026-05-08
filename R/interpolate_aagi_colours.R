@@ -50,7 +50,8 @@ interpolate_aagi_colours <- function(
   direction <- rlang::arg_match0(direction, c(-1, 1))
 
   hex_vals <- colour_as_hex(colours)
-  if (direction == -1L) {
+
+  if (direction == -1) {
     hex_vals <- rev(hex_vals)
   }
   grDevices::colorRampPalette(hex_vals, ..., interpolate = "spline")

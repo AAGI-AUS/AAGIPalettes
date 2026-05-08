@@ -8,7 +8,7 @@
 #' @autoglobal
 #' @export
 aagi_palettes <- function(
-  n,
+  n = 5,
   name = c(
     "aagi_BrYl",
     "aagi_BuOr",
@@ -29,7 +29,7 @@ aagi_palettes <- function(
     "aagi_oranges",
     "aagi_yellows"
   ),
-  direction = 1L
+  direction = 1
 ) {
   name <- rlang::arg_match(name)
   n <- as.integer(n)

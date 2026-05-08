@@ -4,10 +4,11 @@
 \alias{display_aagi_cols}
 \title{AAGI Palette Plots}
 \usage{
-display_aagi_cols(name, n = NULL)
+display_aagi_cols(name = "aagi_colours", n = NULL)
 }
 \arguments{
-\item{name}{A either \code{aagi_colours} or a palette name from the lists below.}
+\item{name}{Either \code{aagi_colours} (default) or a palette name from the lists
+below.}
 
 \item{n}{\code{Numeric} Number of different colours in the palette, minimum 3,
 maximum depends on the palette. Defaults to \code{5}.  Ignored if name is

@@ -55,15 +55,14 @@ interpolate_aagi_colours <- function(
     colours,
     multiple = TRUE
   )
-  valid_directions <- c(-1, 1)
-  if (!direction %in% directions) {
-    cli::cli_abort(c(x = "{.arg direction} must be one of: {directions}"))
-  }
+
+  .validate_direction(direction)
 
   hex_vals <- colour_as_hex(colours)
 
   if (direction == -1) {
     hex_vals <- rev(hex_vals)
+    gg
   }
   return(grDevices::colorRampPalette(hex_vals, ..., interpolate = "spline"))
 }

@@ -34,15 +34,7 @@ aagi_palettes <- function(
   name <- rlang::arg_match(name)
   n <- as.integer(n)
 
-  if (direction != -1L && direction != 1L) {
-    cli::cli_abort(
-      c(
-        x = "You have entered an invalid value for {.arg direction},
-        {.val direction}; it should be either -1 (reversed) or 1 (normal)."
-      )
-    )
-  }
-
+  .validate_direction(direction)
   if (n < 3L) {
     cli::cli_warn(
       c(

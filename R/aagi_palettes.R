@@ -37,7 +37,8 @@ aagi_palettes <- function(
   if (direction != -1L && direction != 1L) {
     cli::cli_abort(
       c(
-        x = "You have entered an invalid value for {.arg direction}, {.val direction}; it should be either -1 (reversed) or 1 (normal)."
+        x = "You have entered an invalid value for {.arg direction},
+        {.val direction}; it should be either -1 (reversed) or 1 (normal)."
       )
     )
   }
@@ -45,7 +46,8 @@ aagi_palettes <- function(
   if (n < 3L) {
     cli::cli_warn(
       c(
-        x = "You have requested <3 values for your palette. However, {.arg n} should be >3. Returning a palette with 3 values."
+        x = "You have requested <3 values for your palette.
+        However, {.arg n} should be >3. Returning a palette with 3 values."
       )
     )
     n <- 3L
@@ -67,7 +69,9 @@ aagi_palettes <- function(
     if (n > max(ns_avail)) {
       cli::cli_warn(
         c(
-          i = "You have requested >{max(ns_avail)} values for a palette that only has {max(ns_avail)} total. Returning a palette with {max(ns_avail)} values."
+          i = "You have requested >{max(ns_avail)} values for a palette that
+          only has {max(ns_avail)} total. Returning a palette with
+          {max(ns_avail)} values."
         )
       )
       n <- max(ns_avail)
@@ -75,7 +79,9 @@ aagi_palettes <- function(
       # Should only happen if min(ns_avail) > 3, but handle generically.
       cli::cli_warn(
         c(
-          i = "You have requested <{min(ns_avail)} values for a palette that starts at {min(ns_avail)}. Returning a palette with {min(ns_avail)} values."
+          i = "You have requested <{min(ns_avail)} values for a palette that
+          starts at {min(ns_avail)}. Returning a palette with {min(ns_avail)}
+          values."
         )
       )
       n <- min(ns_avail)
@@ -84,7 +90,8 @@ aagi_palettes <- function(
       n2 <- max(ns_avail[ns_avail <= n])
       cli::cli_warn(
         c(
-          i = "Palette {.val {name}} does not provide exactly {.val {n}} stops. Returning {.val {n2}} stops."
+          i = "Palette {.val {name}} does not provide exactly {.val {n}} stops.
+          Returning {.val {n2}} stops."
         )
       )
       n <- n2

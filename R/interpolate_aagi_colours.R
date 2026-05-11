@@ -28,8 +28,9 @@
 #'   geom_point() +
 #'   scale_colour_manual("Weight", values = wt_vals)
 #'
+#' @autoglobal
 #' @export
-#'
+
 interpolate_aagi_colours <- function(
   colours = names(aagi_colours[c(6, 5, 1, 4, 2, 3)]),
   direction = 1,

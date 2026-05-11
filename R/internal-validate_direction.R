@@ -24,5 +24,5 @@
     ))
   }
 
-  invisible(TRUE)
+  return(invisible(TRUE))
 }

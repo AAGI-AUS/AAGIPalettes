@@ -71,8 +71,10 @@ aagi_palettes <- function(
 
   p <- pal[[as.character(n)]]
 
-  if (direction == -1L) {
-    p <- rev(p)
+  if (direction == 1L) {
+    p
+  } else {
+    rev(p)
   }
 
   return(p)

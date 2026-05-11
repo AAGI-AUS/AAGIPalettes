@@ -60,7 +60,7 @@
 #' # display five colours from the Blue Orange diverging palette
 #' display_aagi_cols(name = "aagi_BuOr")
 #'
-display_aagi_cols <- function(name = "aagi_colours", n = NULL) {
+display_aagi_cols <- function(name = "aagi_colours", n = 5) {
   name <- rlang::arg_match0(
     name,
     values = c(
@@ -70,16 +70,12 @@ display_aagi_cols <- function(name = "aagi_colours", n = NULL) {
   )
   if (name %in% "aagi_colours") {
     return(show_col_base(AAGIPalettes::aagi_colours))
-  } else {
-    if (is.null(n)) {
-      n <- 5L
-    }
-    return(show_col_base(aagi_palettes(
-      n = n,
-      name = name,
-      direction = 1L
-    )))
   }
+  return(show_col_base(aagi_palettes(
+    n = n,
+    name = name,
+    direction = 1L
+  )))
 }
 
 show_col_base <- function(colours) {

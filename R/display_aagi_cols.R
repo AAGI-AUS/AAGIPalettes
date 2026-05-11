@@ -68,7 +68,7 @@ display_aagi_cols <- function(name = "aagi_colours", n = NULL) {
       .aagi_colour_names
     )
   )
-  if (name %in% c("aagi_colours")) {
+  if (name %in% "aagi_colours") {
     return(show_col_base(AAGIPalettes::aagi_colours))
   } else {
     if (is.null(n)) {

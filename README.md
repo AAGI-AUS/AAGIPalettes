@@ -69,10 +69,10 @@ You can see the hex code values in a named vector like so.
 library(AAGIPalettes)
 
 aagi_colours
-#> AAGI Bright Green         AAGI Teal         AAGI Blue        AAGI Green       AAGI Yellow 
-#>         "#B6D438"         "#00808b"         "#648FD2"         "#54921E"         "#FFBC42" 
-#>       AAGI Orange        AAGI Black         AAGI Grey 
-#>         "#ec8525"         "#414042"         "#F2F2F2"
+#> AAGI Bright Green         AAGI Teal         AAGI Blue        AAGI Green 
+#>         "#B6D438"         "#00808b"         "#648FD2"         "#54921E" 
+#>       AAGI Yellow       AAGI Orange        AAGI Black         AAGI Grey 
+#>         "#FFBC42"         "#ec8525"         "#414042"         "#F2F2F2"
 ```
 
 ### Viewing Colours

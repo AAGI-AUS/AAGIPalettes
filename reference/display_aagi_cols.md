@@ -5,14 +5,15 @@ A quick and dirty way to show AAGI colours in a palette plot.
 ## Usage
 
 ``` r
-display_aagi_cols(name, n = NULL)
+display_aagi_cols(name = "aagi_colours", n = 5)
 ```
 
 ## Arguments
 
 - name:
 
-  A either `aagi_colours` or a palette name from the lists below.
+  Either `aagi_colours` (default) or a palette name from the lists
+  below.
 
 - n:
 
@@ -36,11 +37,11 @@ display_aagi_cols(name, n = NULL)
 
   The sequential palettes names are:
 
+  - “aagi_BrYl”
+
   - “aagi_blues”,
 
   - “aagi_bright_greens”,
-
-  - “aagi_BrYl”,
 
   - “aagi_greens”,
 
@@ -55,8 +56,6 @@ display_aagi_cols(name, n = NULL)
   - “aagi_teals”,
 
   - “aagi_TlGnYl”,
-
-  - “aagi_TlYl”,
 
   - “aagi_yellows”
 
@@ -75,7 +74,9 @@ display_aagi_cols(name, n = NULL)
 
   - “aagi_RdTl”,
 
-  - “aagi_TlGn”
+  - “aagi_TlGn”,
+
+  - “aagi_TlYl”
 
   All the diverging palettes are available in variations from 3
   different values up to 11 different values.

@@ -9,8 +9,7 @@ vomit colours that get produced when generating many colours.
 
 ``` r
 interpolate_aagi_colours(
-  colours = c("AAGI Orange", "AAGI Yellow", "AAGI Bright Green", "AAGI Green",
-    "AAGI Teal", "AAGI Blue"),
+  colours = names(aagi_colours[c(6, 5, 1, 4, 2, 3)]),
   direction = 1,
   ...
 )

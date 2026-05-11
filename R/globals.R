@@ -2,5 +2,6 @@
 
 utils::globalVariables(c(
   "aagi_palettes_list", # <aagi_palettes>
+  "aagi_colours", # <interpolate_aagi_colours>
   NULL
 ))

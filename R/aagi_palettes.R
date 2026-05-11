@@ -13,9 +13,22 @@ aagi_palettes <- function(
   direction = 1
 ) {
   name <- rlang::arg_match(name, .aagi_colour_names)
-  n <- as.integer(n)
+  if (
+    !is.numeric(n) &&
+      !is.integer(n) ||
+      length(n) != 1L ||
+      is.na(n) ||
+      !is.finite(n)
+  ) {
+    cli::cli_abort(
+      c(x = "{.arg n} must be a single finite numeric value.")
+    )
+  }
 
   .validate_direction(direction)
+
+  n <- as.integer(n)
+
   if (n < 3L) {
     cli::cli_warn(
       c(

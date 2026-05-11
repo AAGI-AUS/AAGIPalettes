@@ -4,10 +4,11 @@
 \alias{display_aagi_cols}
 \title{AAGI Palette Plots}
 \usage{
-display_aagi_cols(name, n = NULL)
+display_aagi_cols(name = "aagi_colours", n = 5)
 }
 \arguments{
-\item{name}{A either \code{aagi_colours} or a palette name from the lists below.}
+\item{name}{Either \code{aagi_colours} (default) or a palette name from the lists
+below.}
 
 \item{n}{\code{Numeric} Number of different colours in the palette, minimum 3,
 maximum depends on the palette. Defaults to \code{5}.  Ignored if name is
@@ -26,9 +27,9 @@ extremes are emphasized with dark colours that have contrasting hues.
 
 The sequential palettes names are:
 \itemize{
+\item \dQuote{aagi_BrYl}
 \item \dQuote{aagi_blues},
 \item \dQuote{aagi_bright_greens},
-\item \dQuote{aagi_BrYl},
 \item \dQuote{aagi_greens},
 \item \dQuote{aagi_greys},
 \item \dQuote{aagi_reds},
@@ -36,7 +37,6 @@ The sequential palettes names are:
 \item \dQuote{aagi_RdYl},
 \item \dQuote{aagi_teals},
 \item \dQuote{aagi_TlGnYl},
-\item \dQuote{aagi_TlYl},
 \item \dQuote{aagi_yellows}
 }
 
@@ -50,7 +50,8 @@ The diverging palettes are:
 \item \dQuote{aagi_GnYl},
 \item \dQuote{aagi_RdBu},
 \item \dQuote{aagi_RdTl},
-\item \dQuote{aagi_TlGn}
+\item \dQuote{aagi_TlGn},
+\item \dQuote{aagi_TlYl}
 }
 
 All the diverging palettes are available in variations from 3 different

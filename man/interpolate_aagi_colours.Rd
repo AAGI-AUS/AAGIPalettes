@@ -5,8 +5,7 @@
 \title{Interpolate an AAGI Colour Palette to Expand the Colour Values}
 \usage{
 interpolate_aagi_colours(
-  colours = c("AAGI Orange", "AAGI Yellow", "AAGI Bright Green", "AAGI Green",
-    "AAGI Teal", "AAGI Blue"),
+  colours = names(aagi_colours[c(6, 5, 1, 4, 2, 3)]),
   direction = 1,
   ...
 )

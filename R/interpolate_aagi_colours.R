@@ -28,28 +28,35 @@
 #'   geom_point() +
 #'   scale_colour_manual("Weight", values = wt_vals)
 #'
+#' @autoglobal
 #' @export
-#'
+
 interpolate_aagi_colours <- function(
-  colours = c(
-    "AAGI Orange",
-    "AAGI Yellow",
-    "AAGI Bright Green",
-    "AAGI Green",
-    "AAGI Teal",
-    "AAGI Blue"
-  ),
+  colours = names(aagi_colours[c(6, 5, 1, 4, 2, 3)]),
   direction = 1,
   ...
 ) {
+  colours_len <- length(colours)
+  if (colours_len == 1) {
+    cli::cli_warn(c(i = "Returning a palette with only one colour."))
+  }
+  if (colours_len < 1) {
+    cli::cli_abort(
+      c(x = "You have provided no colours for the palette.")
+    )
+  }
   colours <- rlang::arg_match(
     colours,
+    values = names(aagi_colours),
     multiple = TRUE
   )
 
+  .validate_direction(direction)
+
   hex_vals <- colour_as_hex(colours)
-  if (direction == -1L) {
+
+  if (direction == -1) {
     hex_vals <- rev(hex_vals)
   }
-  grDevices::colorRampPalette(hex_vals, ..., interpolate = "spline")
+  return(grDevices::colorRampPalette(hex_vals, ..., interpolate = "spline"))
 }

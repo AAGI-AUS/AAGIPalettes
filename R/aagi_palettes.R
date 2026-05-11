@@ -1,51 +1,39 @@
 #' Sequential and Diverging Colour Palettes for AAGI Graphical Outputs
 #'
-#' @param n Integer. Number of different colours in the palette.
 #' @param name Character. Name of the desired palette.
+#' @param n Integer. Number of different colours in the palette. Defaults to 5.
 #' @param direction Integer. If `1`, default order. If `-1`, reverse order.
 #'
 #' @returns A character vector of hexadecimal colour codes.
 #' @autoglobal
 #' @export
 aagi_palettes <- function(
-  n,
-  name = c(
-    "aagi_BrYl",
-    "aagi_BuOr",
-    "aagi_BuYl",
-    "aagi_GnYl",
-    "aagi_RdBu",
-    "aagi_RdTl",
-    "aagi_RdYl",
-    "aagi_TlGn",
-    "aagi_TlYl",
-    "aagi_TlGnYl",
-    "aagi_blues",
-    "aagi_bright_greens",
-    "aagi_greens",
-    "aagi_greys",
-    "aagi_reds",
-    "aagi_teals",
-    "aagi_oranges",
-    "aagi_yellows"
-  ),
-  direction = 1L
+  name,
+  n = 5,
+  direction = 1
 ) {
-  name <- rlang::arg_match(name)
-  n <- as.integer(n)
-
-  if (direction != -1L && direction != 1L) {
+  name <- rlang::arg_match(name, .aagi_colour_names)
+  if (
+    !is.numeric(n) &&
+      !is.integer(n) ||
+      length(n) != 1L ||
+      is.na(n) ||
+      !is.finite(n)
+  ) {
     cli::cli_abort(
-      c(
-        x = "You have entered an invalid value for {.arg direction}, {.val direction}; it should be either -1 (reversed) or 1 (normal)."
-      )
+      c(x = "{.arg n} must be a single finite numeric value.")
     )
   }
+
+  .validate_direction(direction)
+
+  n <- as.integer(n)
 
   if (n < 3L) {
     cli::cli_warn(
       c(
-        x = "You have requested <3 values for your palette. However, {.arg n} should be >3. Returning a palette with 3 values."
+        i = "You have requested <3 values for your palette.
+        However, {.arg n} should be >3. Returning a palette with 3 values."
       )
     )
     n <- 3L
@@ -61,13 +49,13 @@ aagi_palettes <- function(
   ns_avail <- as.integer(names(pal))
   ns_avail <- sort(ns_avail)
 
-  # If requested n doesn't exist, clamp to nearest available <= n,
-  # otherwise to max available (this mimics your old “cap at max stops” behavior).
   if (!n %in% ns_avail) {
     if (n > max(ns_avail)) {
       cli::cli_warn(
         c(
-          i = "You have requested >{max(ns_avail)} values for a palette that only has {max(ns_avail)} total. Returning a palette with {max(ns_avail)} values."
+          i = "You have requested >{max(ns_avail)} values for a palette that
+          only has {max(ns_avail)} total. Returning a palette with
+          {max(ns_avail)} values."
         )
       )
       n <- max(ns_avail)
@@ -75,7 +63,9 @@ aagi_palettes <- function(
       # Should only happen if min(ns_avail) > 3, but handle generically.
       cli::cli_warn(
         c(
-          i = "You have requested <{min(ns_avail)} values for a palette that starts at {min(ns_avail)}. Returning a palette with {min(ns_avail)} values."
+          i = "You have requested <{min(ns_avail)} values for a palette that
+          starts at {min(ns_avail)}. Returning a palette with {min(ns_avail)}
+          values."
         )
       )
       n <- min(ns_avail)
@@ -84,7 +74,8 @@ aagi_palettes <- function(
       n2 <- max(ns_avail[ns_avail <= n])
       cli::cli_warn(
         c(
-          i = "Palette {.val {name}} does not provide exactly {.val {n}} stops. Returning {.val {n2}} stops."
+          i = "Palette {.val {name}} does not provide exactly {.val {n}} stops.
+          Returning {.val {n2}} stops."
         )
       )
       n <- n2
@@ -92,10 +83,9 @@ aagi_palettes <- function(
   }
 
   p <- pal[[as.character(n)]]
-
-  if (direction == -1L) {
-    p <- rev(p)
+  if (direction == 1L) {
+    return(p)
+  } else {
+    return(rev(p))
   }
-
-  return(p)
 }

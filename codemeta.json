@@ -132,23 +132,11 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=rlang"
     },
-    "5": {
-      "@type": "SoftwareApplication",
-      "identifier": "scales",
-      "name": "scales",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=scales"
-    },
     "SystemRequirements": null
   },
   "applicationCategory": "Tools",
   "isPartOf": "https://grdc.com.au/research/partnerships-and-initiatives/strategic-partnerships/aagi",
-  "fileSize": "157.076KB",
+  "fileSize": "150.401KB",
   "releaseNotes": "https://github.com/AAGI-AUS/AAGIPalettes/blob/main/NEWS.md",
   "readme": "https://github.com/AAGI-AUS/AAGIPalettes/blob/main/README.md",
   "contIntegration": "https://github.com/AAGI-AUS/AAGIPalettes/actions/workflows/R-CMD-check.yaml",

@@ -46,7 +46,7 @@ interpolate_aagi_colours <- function(
   }
   colours <- rlang::arg_match(
     colours,
-    names(aagi_colours),
+    values = names(aagi_colours),
     multiple = TRUE
   )
 

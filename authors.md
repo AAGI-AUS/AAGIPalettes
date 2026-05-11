@@ -20,7 +20,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/AAGI-AUS/AAGIPalettes/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/AAGI-AUS/AAGIPalettes/blob/v0.0.2/DESCRIPTION)
 
 Sparks A (2026). *AAGIPalettes: AAGI Colours and Colour Palettes*. R
 package version 0.0.2, <https://github.com/AAGI-AUS/AAGIPalettes>.

@@ -13,13 +13,16 @@
 #' @returns An invisible `TRUE`.
 #' @dev
 .validate_direction <- function(direction) {
-  if (direction != -1 && direction != 1) {
-    cli::cli_abort(
-      c(
-        x = "You have entered an invalid value for {.arg direction}.",
-        i = "{.arg direction}; it should be either -1 (reversed) or 1 (normal)."
-      )
-    )
+  if (
+    !is.numeric(direction) ||
+      !rlang::is_scalar_atomic(direction) ||
+      !(direction %in% c(-1, 1))
+  ) {
+    cli::cli_abort(c(
+      x = "Invalid {.arg direction}: {.val {direction}}.",
+      i = "{.arg direction} must be either {-1} (reversed) or {1} (normal)."
+    ))
   }
-  return(invisible(TRUE))
+
+  invisible(TRUE)
 }

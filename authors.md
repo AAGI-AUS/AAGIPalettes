@@ -23,12 +23,12 @@ Source:
 [`DESCRIPTION`](https://github.com/AAGI-AUS/AAGIPalettes/blob/main/DESCRIPTION)
 
 Sparks A (2026). *AAGIPalettes: AAGI Colours and Colour Palettes*. R
-package version 0.0.2.9000, <https://github.com/AAGI-AUS/AAGIPalettes>.
+package version 0.0.2, <https://github.com/AAGI-AUS/AAGIPalettes>.
 
     @Manual{,
       title = {AAGIPalettes: AAGI Colours and Colour Palettes},
       author = {Adam H. Sparks},
       year = {2026},
-      note = {R package version 0.0.2.9000},
+      note = {R package version 0.0.2},
       url = {https://github.com/AAGI-AUS/AAGIPalettes},
     }

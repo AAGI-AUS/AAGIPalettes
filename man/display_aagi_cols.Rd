@@ -4,7 +4,7 @@
 \alias{display_aagi_cols}
 \title{AAGI Palette Plots}
 \usage{
-display_aagi_cols(name = "aagi_colours", n = NULL)
+display_aagi_cols(name = "aagi_colours", n = 5)
 }
 \arguments{
 \item{name}{Either \code{aagi_colours} (default) or a palette name from the lists

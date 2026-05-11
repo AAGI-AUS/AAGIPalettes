@@ -102,8 +102,15 @@ show_col_base <- function(colours) {
     col <- ((i - 1L) %% ncol)
     row <- nrow - ((i - 1L) %/% ncol) - 1L
     if (!is.na(colours[i])) {
-      rect(col, row, col + 1L, row + 1L, col = colours[i], border = NA)
-      text(
+      graphics::rect(
+        col,
+        row,
+        col + 1L,
+        row + 1L,
+        col = colours[i],
+        border = NA
+      )
+      graphics::text(
         col + 0.5,
         row + 0.5,
         colours[i],
@@ -115,7 +122,7 @@ show_col_base <- function(colours) {
 }
 
 contrast_color <- function(hex) {
-  rgb <- col2rgb(hex)
+  rgb <- grDevices::col2rgb(hex)
   # Perceived luminance (standard formula)
   luminance <- (0.299 * rgb[1] + 0.587 * rgb[2] + 0.114 * rgb[3]) / 255
   if (luminance > 0.5) "black" else "white"

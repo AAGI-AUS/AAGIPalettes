@@ -1,8 +1,16 @@
 # Changelog
 
-## AAGIPalettes 0.0.2
+## AAGIPalettes 0.0.3
 
 ### Bug fixes and internal changes
+
+- Fixed bug where `aagi_palettes_list` was not available unless
+  [`library("AAGIPalettes")`](https://github.com/AAGI-AUS/AAGIPalettes)
+  was used in the active R session.
+- Remove duplicated files, package data was documented 2X.
+- Improved data documentation.
+
+## AAGIPalettes 0.0.2
 
 - Strengthened input validation in
   [`aagi_palettes()`](https://AAGI-AUS.github.io/AAGIPalettes/reference/aagi_palettes.md):

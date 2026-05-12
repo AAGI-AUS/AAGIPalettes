@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">AAGIPalettes</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.2</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.3</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,13 +28,20 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="../logo.png" class="logo" alt=""><h1>Changelog</h1>
-      <small>Source: <a href="https://github.com/AAGI-AUS/AAGIPalettes/blob/v0.0.2/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
+      <small>Source: <a href="https://github.com/AAGI-AUS/AAGIPalettes/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.0.2" id="aagipalettes-002">AAGIPalettes 0.0.2<a class="anchor" aria-label="anchor" href="#aagipalettes-002"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.0.3" id="aagipalettes-003">AAGIPalettes 0.0.3<a class="anchor" aria-label="anchor" href="#aagipalettes-003"></a></h2>
 <div class="section level3">
-<h3 id="bug-fixes-and-internal-changes-0-0-2">Bug fixes and internal changes<a class="anchor" aria-label="anchor" href="#bug-fixes-and-internal-changes-0-0-2"></a></h3>
+<h3 id="bug-fixes-and-internal-changes-0-0-3">Bug fixes and internal changes<a class="anchor" aria-label="anchor" href="#bug-fixes-and-internal-changes-0-0-3"></a></h3>
+<ul><li>Fixed bug where <code>aagi_palettes_list</code> was not available unless <code><a href="https://github.com/AAGI-AUS/AAGIPalettes" class="external-link">library("AAGIPalettes")</a></code> was used in the active R session.</li>
+<li>Remove duplicated files, package data was documented 2X.</li>
+<li>Improved data documentation.</li>
+</ul></div>
+</div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.0.2" id="aagipalettes-002">AAGIPalettes 0.0.2<a class="anchor" aria-label="anchor" href="#aagipalettes-002"></a></h2>
 <ul><li>Strengthened input validation in <code><a href="../reference/aagi_palettes.html">aagi_palettes()</a></code>: <code>n</code> is now validated (scalar, finite, non-<code>NA</code>) before coercion; <code>direction</code> is validated before the overflow guards run.</li>
 <li>Fixed overflow guard for <code>aagi_greens</code>: previously capped at 7 stops instead of its actual maximum of 9 stops.</li>
 <li>Added overflow guard for <code>aagi_RdYl</code>, which has a 7-stop maximum; requests above 7 now warn and clamp correctly instead of silently returning <code>NULL</code>.</li>
@@ -45,7 +52,6 @@
 <li>Renamed test file <code>test-test-colours_as_hex.R</code> to <code>test-colours_as_hex.R</code>
 </li>
 </ul></div>
-</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.0.1" id="aagipalettes-001">AAGIPalettes 0.0.1<a class="anchor" aria-label="anchor" href="#aagipalettes-001"></a></h2>
 <ul><li>First stable release</li>

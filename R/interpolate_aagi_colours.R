@@ -1,14 +1,14 @@
 #' Interpolate an AAGI Colour Palette to Expand the Colour Values
 #'
 #' Takes a \acronym{AAGI} colour palette and generates more colours from it, so
-#'   that there are enough to make your chart.  The interpolation method is set
+#'   that there are enough to make your chart. The interpolation method is set
 #'   to `spline` (the default is `linear`) in an attempt to reduce the number
-#'   of vomit colours that get produced when generating many colours.
+#'   of undesirable colours that get produced when generating many colours.
 #'
 #' @param colours `Character`; given names of AAGI colours to use in the
 #'   interpolation. Defaults to "AAGI Orange", "AAGI Yellow",
 #'   "AAGI Bright Green", "AAGI Teal", "AAGI Blue" in that order.
-#' @param direction	`Integer` Sets the order of colours in the scale.  If `1`,
+#' @param direction `Integer` Sets the order of colours in the scale. If `1`,
 #'   the default order is used. If `-1`, the order of colours is reversed.
 #' @param ... Additional arguments to pass to [grDevices::colorRampPalette()],
 #'   see details here [grDevices::colorRamp()].
@@ -21,7 +21,6 @@
 #' library(ggplot2)
 #'
 #' x <- interpolate_aagi_colours()
-#' # round the weights to clean up the legend, this is just an e.g. after all...
 #' wt_vals <- x(length(unique(round(mtcars$wt, 1))))
 #'
 #' ggplot(mtcars, aes(x = mpg, y = hp, colour = as.factor(round(wt, 1)))) +
@@ -30,33 +29,44 @@
 #'
 #' @autoglobal
 #' @export
-
 interpolate_aagi_colours <- function(
-  colours = names(aagi_colours[c(6, 5, 1, 4, 2, 3)]),
+  colours = c(
+    "AAGI Orange",
+    "AAGI Yellow",
+    "AAGI Bright Green",
+    "AAGI Teal",
+    "AAGI Blue"
+  ),
   direction = 1,
   ...
 ) {
+  aagi_cols <- AAGIPalettes::aagi_colours
+
   colours_len <- length(colours)
+
   if (colours_len == 1) {
     cli::cli_warn(c(i = "Returning a palette with only one colour."))
   }
+
   if (colours_len < 1) {
     cli::cli_abort(
       c(x = "You have provided no colours for the palette.")
     )
   }
+
   colours <- rlang::arg_match(
     colours,
-    values = names(aagi_colours),
+    values = names(aagi_cols),
     multiple = TRUE
   )
 
   .validate_direction(direction)
 
-  hex_vals <- colour_as_hex(colours)
+  hex_vals <- unname(aagi_cols[colours])
 
   if (direction == -1) {
     hex_vals <- rev(hex_vals)
   }
-  return(grDevices::colorRampPalette(hex_vals, ..., interpolate = "spline"))
+
+  grDevices::colorRampPalette(hex_vals, ..., interpolate = "spline")
 }

@@ -5,7 +5,8 @@
 \title{Interpolate an AAGI Colour Palette to Expand the Colour Values}
 \usage{
 interpolate_aagi_colours(
-  colours = names(aagi_colours[c(6, 5, 1, 4, 2, 3)]),
+  colours = c("AAGI Orange", "AAGI Yellow", "AAGI Bright Green", "AAGI Teal",
+    "AAGI Blue"),
   direction = 1,
   ...
 )
@@ -15,7 +16,7 @@ interpolate_aagi_colours(
 interpolation. Defaults to "AAGI Orange", "AAGI Yellow",
 "AAGI Bright Green", "AAGI Teal", "AAGI Blue" in that order.}
 
-\item{direction}{\code{Integer} Sets the order of colours in the scale.  If \code{1},
+\item{direction}{\code{Integer} Sets the order of colours in the scale. If \code{1},
 the default order is used. If \code{-1}, the order of colours is reversed.}
 
 \item{...}{Additional arguments to pass to \code{\link[grDevices:colorRampPalette]{grDevices::colorRampPalette()}},
@@ -26,15 +27,14 @@ A function that takes a single value and makes that many colours.
 }
 \description{
 Takes a \acronym{AAGI} colour palette and generates more colours from it, so
-that there are enough to make your chart.  The interpolation method is set
+that there are enough to make your chart. The interpolation method is set
 to \code{spline} (the default is \code{linear}) in an attempt to reduce the number
-of vomit colours that get produced when generating many colours.
+of undesirable colours that get produced when generating many colours.
 }
 \examples{
 library(ggplot2)
 
 x <- interpolate_aagi_colours()
-# round the weights to clean up the legend, this is just an e.g. after all...
 wt_vals <- x(length(unique(round(mtcars$wt, 1))))
 
 ggplot(mtcars, aes(x = mpg, y = hp, colour = as.factor(round(wt, 1)))) +

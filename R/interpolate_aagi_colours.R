@@ -40,7 +40,7 @@ interpolate_aagi_colours <- function(
   direction = 1,
   ...
 ) {
-  aagi_cols <- AAGIPalettes::aagi_colours
+  aagi_cols <- get("aagi_colours", envir = asNamespace("AAGIPalettes"))
 
   colours_len <- length(colours)
 

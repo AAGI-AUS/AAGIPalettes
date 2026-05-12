@@ -3,13 +3,14 @@
 Takes a AAGI colour palette and generates more colours from it, so that
 there are enough to make your chart. The interpolation method is set to
 `spline` (the default is `linear`) in an attempt to reduce the number of
-vomit colours that get produced when generating many colours.
+undesirable colours that get produced when generating many colours.
 
 ## Usage
 
 ``` r
 interpolate_aagi_colours(
-  colours = names(aagi_colours[c(6, 5, 1, 4, 2, 3)]),
+  colours = c("AAGI Orange", "AAGI Yellow", "AAGI Bright Green", "AAGI Teal",
+    "AAGI Blue"),
   direction = 1,
   ...
 )
@@ -49,7 +50,6 @@ aagi_palettes
 library(ggplot2)
 
 x <- interpolate_aagi_colours()
-# round the weights to clean up the legend, this is just an e.g. after all...
 wt_vals <- x(length(unique(round(mtcars$wt, 1))))
 
 ggplot(mtcars, aes(x = mpg, y = hp, colour = as.factor(round(wt, 1)))) +

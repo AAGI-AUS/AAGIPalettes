@@ -16,15 +16,15 @@
 #'      \item{AAGI Grey}{#F2F2F2}
 #'      }
 #' @keywords datasets
-#'
+#' @docType data
 #' @family data
 
 "aagi_colours"
 
 #' AAGI sequential and diverging colour palettes (hex codes)
 #'
-#' A nested list of sequential and diverging AAGI colour palettes used by
-#' [aagi_palettes()]. The top-level names are palette identifiers (e.g.
+#' A nested list of sequential and diverging \acronym{AAGI} colour palettes used
+#' by [aagi_palettes()]. The top-level names are palette identifiers (*e.g.*,
 #' `"aagi_RdTl"`). Each palette is itself a named list keyed by the number of
 #' colour stops (`"3"`, `"4"`, …). Each entry is a character vector of hex
 #' colour codes of length `n`.
@@ -36,7 +36,7 @@
 #'
 #' @details
 #' Not all palettes support all values of `n`. For example, `"aagi_RdYl"` is
-#' defined only for 3–7 stops in the source function.
+#' defined only for 3–7 stops.
 #'
 #' @examples
 #' # List available palettes
@@ -51,7 +51,8 @@
 #' # Reverse order (equivalent to direction = -1)
 #' rev(aagi_palettes_list[["aagi_RdTl"]][["11"]])
 #'
-#' @name aagi_palettes_list
 #' @keywords datasets
 #' @docType data
-NULL
+#' @family data
+
+"aagi_palettes_list"

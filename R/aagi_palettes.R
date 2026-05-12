@@ -13,7 +13,7 @@ aagi_palettes <- function(
   n = 5,
   direction = 1
 ) {
-  name <- rlang::arg_match(name, .aagi_colour_names)
+  name <- rlang::arg_match(name, .aagi_palette_names)
 
   if (
     ((!is.numeric(n) && !is.integer(n)) ||

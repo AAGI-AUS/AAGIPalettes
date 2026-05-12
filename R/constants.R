@@ -1,4 +1,4 @@
-.aagi_colour_names = c(
+.aagi_palette_names = c(
   "aagi_BrYl",
   "aagi_BuOr",
   "aagi_BuYl",
@@ -17,4 +17,15 @@
   "aagi_teals",
   "aagi_oranges",
   "aagi_yellows"
+)
+
+.aagi_official_colour_names <- c(
+  "AAGI Black",
+  "AAGI Bright Green",
+  "AAGI Blue",
+  "AAGI Teal",
+  "AAGI Green",
+  "AAGI Yellow",
+  "AAGI Orange",
+  "AAGI Grey"
 )

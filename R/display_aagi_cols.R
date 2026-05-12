@@ -65,7 +65,7 @@ display_aagi_cols <- function(name = "aagi_colours", n = 5) {
     name,
     values = c(
       "aagi_colours",
-      .aagi_colour_names
+      .aagi_palette_names
     )
   )
   if (name %in% "aagi_colours") {

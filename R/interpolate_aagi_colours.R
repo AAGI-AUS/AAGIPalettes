@@ -29,6 +29,7 @@
 #'
 #' @autoglobal
 #' @export
+
 interpolate_aagi_colours <- function(
   colours = c(
     "AAGI Orange",
@@ -40,8 +41,6 @@ interpolate_aagi_colours <- function(
   direction = 1,
   ...
 ) {
-  aagi_cols <- get("aagi_colours", envir = asNamespace("AAGIPalettes"))
-
   colours_len <- length(colours)
 
   if (colours_len == 1) {
@@ -56,13 +55,13 @@ interpolate_aagi_colours <- function(
 
   colours <- rlang::arg_match(
     colours,
-    values = names(aagi_cols),
+    values = .aagi_official_colour_names,
     multiple = TRUE
   )
 
   .validate_direction(direction)
 
-  hex_vals <- unname(aagi_cols[colours])
+  hex_vals <- colour_as_hex(colours)
 
   if (direction == -1) {
     hex_vals <- rev(hex_vals)

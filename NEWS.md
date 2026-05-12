@@ -1,6 +1,13 @@
-# AAGIPalettes 0.0.2
+
+# AAGIPalettes 0.0.3
 
 ## Bug fixes and internal changes
+
+- Fixed bug where `aagi_palettes_list` was not available unless `library("AAGIPalettes")` was used in the active R session.
+- Remove duplicated files, package data was documented 2X.
+- Improved data documentation.
+
+# AAGIPalettes 0.0.2
 
 - Strengthened input validation in `aagi_palettes()`: `n` is now validated (scalar, finite, non-`NA`) before coercion; `direction` is validated before the overflow guards run.
 - Fixed overflow guard for `aagi_greens`: previously capped at 7 stops instead of its actual maximum of 9 stops.

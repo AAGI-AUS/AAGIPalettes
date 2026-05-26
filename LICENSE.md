@@ -1,8 +1,6 @@
 # MIT License
 
 Copyright (c) 2025 Grains Research and Development Corporation (GRDC)
-and strategic partners, Curtin University, the University of Queensland
-and Adelaide University
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the

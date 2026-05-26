@@ -27,12 +27,6 @@ Authors:
 
 Other contributors:
 
-- Curtin University ([ROR](https://ror.org/02n415q13)) (Provided support
-  through Adam Sparks's time) \[copyright holder\]
-
 - Grains Research and Development Corporation
   ([ROR](https://ror.org/02xwr1996)) (GRDC Project CUR2210-005OPX
   (AAGI-CU)) \[funder, copyright holder\]
-
-- Curtin University ([ROR](https://ror.org/02n415q13)) \[funder,
-  copyright holder\]

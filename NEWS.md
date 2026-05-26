@@ -1,4 +1,10 @@
 
+# AAGIPalettes 0.0.4
+
+## Bug fixes and internal changes
+
+* Correct Copyright holder information
+
 # AAGIPalettes 0.0.3
 
 ## Bug fixes and internal changes
